@@ -3,12 +3,15 @@
 
 // Default
 
-$color-default-black:               #011c40;
-$color-default-white:               #f9fbfd;
-$color-default-grey:               #d8d8d9;
+$color-black:               #102654;
+$color-black-footer:        #030A1A;
+$color-white:               #ffffff;
+$color-grey:                #f8f9fc;
+$color-blue:                #103aae;
+$color-red:                 #ed0233;
 
-$color-default-hover:               #3c669d;
-$color-default-active:               #7286a0;
+$color-hover:               #003d85;
+$color-active:              #b80027;
 
 // ---------------------------------
 
@@ -17,7 +20,8 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-montserrat:                         "Montserrat", "Arial", sans-serif;
+$ff-roboto:                         "Roboto Condensed", "Arial", sans-serif;
+$ff-bebasneue:                      "Bebas Neue", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------

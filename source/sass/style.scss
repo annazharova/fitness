@@ -18,7 +18,15 @@
 // Blocks
 // ---------------------------------
 
-// @import "blocks/button";
+@import "blocks/page";
+@import "blocks/intro";
+@import "blocks/phone";
+@import "blocks/gym";
+@import "blocks/membership";
+@import "blocks/supergames";
+@import "blocks/trainers";
+@import "blocks/trainer";
+@import "blocks/footer";
 
 // ---------------------------------
 
@@ -29,7 +37,7 @@
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
-    color: $color-default-white;
+    color: $color-white;
   }
 } */
 

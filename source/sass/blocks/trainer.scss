@@ -1,0 +1,24 @@
+.trainer {
+  background-color: $color-black;
+  opacity: 89%;
+  color: $color-white;
+}
+
+.trainer h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.trainer p {
+  color: #b6bdcc;
+}
+
+.trainer ul li::before {
+  content: "• ";
+  color: #ffffff;
+  font-weight: bold;
+  display: inline-block;
+  width: 6px;
+  // margin-left: -1em;
+}

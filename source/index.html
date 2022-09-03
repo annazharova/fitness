@@ -21,7 +21,7 @@
           <p>Кардио-зона</p>
           <a class="logo" href="#">
             <span class="visually-hidden">Главная страница</span>
-            <svg width="89" height="20">
+            <svg class="logo__img" width="89" height="20">
               <use href="img/sprite_auto.svg#logo"></use>
             </svg>
           </a>
@@ -29,6 +29,18 @@
             <a class="" href="tel:+78005555555">8-800-555-55-55</a>
           </p>
           <a class="button" href="#membership">Купить абонемент</a>
+          <picture>
+            <!-- 1х: 560px; 2x: 1120px -->
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/superman.webp 1x, img/superman@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" type="image/webp" srcset="img/superman-tablet.webp 1x, img/superman-tablet@2x.webp 2x"> -->
+            <!-- 1х: 560px; 2x: 1120px -->
+            <!-- <source media="(min-width: 1366px)" srcset="img/superman.png 1x, img/superman@2x.png 2x"> -->
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" srcset="img/superman-tablet.png 1x, img/superman-tablet@2x.png 2x"> -->
+            <!-- 1х: 290px; 2x: 580px -->
+            <img class="travel__img" src="img/superman.jpg" srcset="img/superman@2x.jpg 2x" width="560" height="301" alt="Мужчина в костюме супермена.">
+          </picture>
           <section class="social">
             <ul class="social__list">
               <li class="social__item">Fb</li>
@@ -41,81 +53,130 @@
       <section class="gym">
         <div class="container">
           <h2>Тренажерный зал</h2>
-          <p>Просторный зал площадью 900 кв.м</p>
+          <p class="lead">Просторный зал площадью 900 кв.м</p>
           <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
           <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+          <picture>
+            <!-- 1х: 560px; 2x: 1120px -->
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/gym-photo.webp 1x, img/gym-photo@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-photo-tablet.webp 1x, img/gym-photo-tablet@2x.webp 2x"> -->
+            <!-- 1х: 560px; 2x: 1120px -->
+            <!-- <source media="(min-width: 1366px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x"> -->
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" srcset="img/gym-photo-tablet.png 1x, img/gym-photo-tablet@2x.png 2x"> -->
+            <!-- 1х: 290px; 2x: 580px -->
+            <img class="travel__img" src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="560" height="301" alt="Зал с тренажёрами.">
+          </picture>
           <iframe width="364" height="228" src="https://www.youtube.com/watch?v=9TZXsZItgdw"></iframe>
         </div>
       </section>
       <section class="membership" id="membership">
         <div class="container">
           <h2>Абонементы</h2>
-          <ul>
-            <li>
+          <ul class="membership__list">
+            <li class="membership__item">
               <h3>1 месяц</h3>
-              <ul>
-                <li>
+              <ul class="membership__tab">
+                <li class="membership__tile">
                   <h4>С тренером</h4>
                   <p>12 занятий</p>
-                  <p>5000 ₽</p>
+                  <span class="price-shadow">5000</span>
+                  <p class="price">5000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg>
+                  </p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
-                  <p>1700 ₽</p>
+                  <span class="price-shadow">1700</span>
+                  <p class="price">1700
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
-                  <p>2700 ₽</p>
+                  <span class="price-shadow">2700</span>
+                  <p class="price">2700
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="membership__item">
               <h3>6 месяцев</h3>
-              <ul>
-                <li>
+              <ul class="membership__tab">
+                <li class="membership__tile">
                   <h4>С тренером</h4>
                   <p>12 занятий</p>
-                  <p>25000 ₽</p>
+                  <span class="price-shadow">25000</span>
+                  <p class="price">25000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
-                  <p>10000 ₽</p>
+                  <span class="price-shadow">10000</span>
+                  <p class="price">10000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
-                  <p>15000 ₽</p>
+                  <span class="price-shadow">15000</span>
+                  <p class="price">15000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="membership__item">
               <h3>12 месяцев</h3>
-              <ul>
-                <li>
+              <ul class="membership__tab">
+                <li class="membership__tile">
                   <h4>С тренером</h4>
                   <p>12 занятий</p>
-                  <p>50000 ₽</p>
+                  <span class="price-shadow">50000</span>
+                  <p class="price">50000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Дневной</h4>
                   <p>с 8:00 до 17:00</p>
-                  <p>17000 ₽</p>
+                  <span class="price-shadow">17000</span>
+                  <p class="price">17000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
-                <li>
+                <li class="membership__tile">
                   <h4>Полный день</h4>
                   <p>с 8:00 до 22:00</p>
-                  <p>27000 ₽</p>
+                  <span class="price-shadow">27000</span>
+                  <p class="price">27000
+                    <svg class="price__img" width="30" height="42">
+                      <use href="img/sprite_auto.svg#ruble"></use>
+                    </svg></p>
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
@@ -123,23 +184,37 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <h2>Super games</h2>
-          <p>Ежегодные соревнования по CrossFit</p>
-          <p>Дата</p>
-          <p>
-            <span>7</span>
-            <span>Марта</span>
-            <span>2019</span>
-          </p>
-          <p>
-            <span>Время</span>
-            <span>12:00</span>
-          </p>
-          <a class="button" href="#">заполнить заявку</a>
-        </div>
-      </section>
+      <div class="container">
+        <section class="supergames">
+          <div class="supergames__wrapper">
+            <h2>Super games</h2>
+            <p>Ежегодные соревнования по CrossFit</p>
+            <p>Дата</p>
+            <p>
+              <span>7</span>
+              <span>Марта</span>
+              <span>2019</span>
+            </p>
+            <p>
+              <span>Время</span>
+              <span>12:00</span>
+            </p>
+            <a class="button" href="#">заполнить заявку</a>
+          </div>
+          <picture>
+            <!-- 1х: 560px; 2x: 1120px -->
+            <source media="(min-width: 1366px)" type="image/webp" srcset="img/crossfit-photo.webp 1x, img/crossfit-photo@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" type="image/webp" srcset="img/crossfit-photo-tablet.webp 1x, img/crossfit-photo-tablet@2x.webp 2x"> -->
+            <!-- 1х: 560px; 2x: 1120px -->
+            <!-- <source media="(min-width: 1366px)" srcset="img/crossfit-photo.png 1x, img/crossfit-photo@2x.png 2x"> -->
+            <!-- 1х: 324px; 2x: 648px -->
+            <!-- <source media="(min-width: 768px)" srcset="img/crossfit-photo-tablet.png 1x, img/crossfit-photo-tablet@2x.png 2x"> -->
+            <!-- 1х: 290px; 2x: 580px -->
+            <img class="travel__img" src="img/crossfit-photo.jpg" srcset="img/crossfit-photo@2x.jpg 2x" width="660" height="500" alt="Зал с тренажёрами.">
+          </picture>
+        </section>
+      </div>
       <section class="trainers">
         <div class="container">
           <h2>Тренеры</h2>
@@ -162,11 +237,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pavlova-mobile.webp 1x, img/trainers/pavlova-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pavlova.png 1x, img/trainers/pavlova@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pavlova.jpg 1x, img/trainers/pavlova@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pavlova-tablet.png 1x, img/trainers/pavlova-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pavlova-tablet.jpg 1x, img/trainers/pavlova-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pavlova-mobile.png" srcset="img/trainers/pavlova-mobile@2x.png 2x" width="260" height="294" alt="Анна Павлова">
+                <img class="trainers__img" src="img/trainers/pavlova-mobile.jpg" srcset="img/trainers/pavlova-mobile@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
               </picture>
             </li>
             <li>
@@ -187,11 +262,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/lavrov-mobile.webp 1x, img/trainers/lavrov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/lavrov.png 1x, img/trainers/lavrov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/lavrov.jpg 1x, img/trainers/lavrov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/lavrov-tablet.png 1x, img/trainers/lavrov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/lavrov-tablet.jpg 1x, img/trainers/lavrov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/lavrov-mobile.png" srcset="img/trainers/lavrov-mobile@2x.png 2x" width="260" height="294" alt="Алексей Лавров">
+                <img class="trainers__img" src="img/trainers/lavrov-mobile.jpg" srcset="img/trainers/lavrov-mobile@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
               </picture>
             </li>
             <li>
@@ -212,11 +287,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.png 1x, img/trainers/pashkov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.png 1x, img/trainers/pashkov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.png" srcset="img/trainers/pashkov-mobile@2x.png 2x" width="260" height="294" alt="Александр Пашков">
+                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
               </picture>
             </li>
             <li>
@@ -237,11 +312,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/ketova-mobile.webp 1x, img/trainers/ketova-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/ketova.png 1x, img/trainers/ketova@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/ketova.jpg 1x, img/trainers/ketova@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/ketova-tablet.png 1x, img/trainers/ketova-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/ketova-tablet.jpg 1x, img/trainers/ketova-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/ketova-mobile.png" srcset="img/trainers/ketova-mobile@2x.png 2x" width="260" height="294" alt="Мария Кетова">
+                <img class="trainers__img" src="img/trainers/ketova-mobile.jpg" srcset="img/trainers/ketova-mobile@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
               </picture>
             </li>
             <li>
@@ -262,11 +337,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.png 1x, img/trainers/pashkov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.png 1x, img/trainers/pashkov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.png" srcset="img/trainers/pashkov-mobile@2x.png 2x" width="260" height="294" alt="Александр Пашков">
+                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
               </picture>
             </li>
             <li>
@@ -287,11 +362,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.png 1x, img/trainers/pashkov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.png 1x, img/trainers/pashkov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.png" srcset="img/trainers/pashkov-mobile@2x.png 2x" width="260" height="294" alt="Александр Пашков">
+                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
               </picture>
             </li>
             <li>
@@ -312,11 +387,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.png 1x, img/trainers/pashkov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.png 1x, img/trainers/pashkov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.png" srcset="img/trainers/pashkov-mobile@2x.png 2x" width="260" height="294" alt="Александр Пашков">
+                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
               </picture>
             </li>
             <li>
@@ -337,11 +412,11 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
                 <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.png 1x, img/trainers/pashkov@2x.png 2x">
+                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
                 <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.png 1x, img/trainers/pashkov-tablet@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.png" srcset="img/trainers/pashkov-mobile@2x.png 2x" width="260" height="294" alt="Александр Пашков">
+                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
               </picture>
             </li>
           </ul>
@@ -423,9 +498,9 @@
             <li>
               <picture>
                 <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/trainers/orlova@2x.webp 2x">
+                <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="reviews__img" src="img/avatars/orlova.png" srcset="img/avatars/orlova@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
               </picture>
               <p>Анна Орлова</p>
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
@@ -435,7 +510,7 @@
                 <!-- 1х: 270px; 2x: 540px -->
                 <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
                 <!-- 1х: 270px; 2x: 540px -->
-                <img class="reviews__img" src="img/avatars/orlova.png" srcset="img/avatars/orlova@2x.png 2x" width="80" height="80" alt="Анна Орлова">
+                <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
               </picture>
               <p>Анна Орлова</p>
               <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>

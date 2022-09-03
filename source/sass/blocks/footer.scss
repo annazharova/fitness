@@ -1,0 +1,18 @@
+.footer {
+  background-color: $color-black-footer;
+  color: $color-white;
+}
+
+.footer a {
+  color: $color-white;
+}
+
+.footer .logo {
+  fill: $color-white;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

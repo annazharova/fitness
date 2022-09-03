@@ -1,0 +1,81 @@
+.membership {
+  background-image: url("../img/plates.png");
+  background-color: $color-grey;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position-x: right;
+  background-position-y: bottom;
+  min-height: 851px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/plates@2x.png");
+    background-size: 50%;
+  }
+}
+
+.membership ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.membership__item h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.membership__tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.membership__tile {
+  background-color: $color-white;
+  width: 360px;
+  height: 448px;
+  padding: 68px 77px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.membership__tile h4 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.membership__tile .button {
+  width: 206px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 2px solid $color-black;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.membership__tile .price {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+  color: $color-blue;
+  z-index: 1;
+}
+
+.membership__tile .price-shadow {
+  color: #E8E8E8;
+  opacity: 0.48;
+  font-size: 100px;
+  font-weight: 700;
+  font-size: 100px;
+  margin-top: 59px;
+  margin-bottom: -80px;
+}

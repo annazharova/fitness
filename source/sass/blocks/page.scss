@@ -1,0 +1,17 @@
+.page__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  flex-grow: 1;
+}
+
+.page h2 {
+  font-family: $ff-bebasneue;
+  font-weight: 700;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $color-black;
+}
