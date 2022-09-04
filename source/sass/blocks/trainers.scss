@@ -3,4 +3,17 @@
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.trainers__item {
+  width: 260px;
+  height: 294px;
+  position: relative;
+}
+
+.trainers__img {
+  position: absolute;
+  top: 0;
 }

@@ -1,17 +1,46 @@
 .trainer {
-  background-color: $color-black;
+  background-color: transparent;
   opacity: 89%;
   color: $color-white;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  &:hover {
+    background-color: $color-black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &:hover p,
+  &:hover ul {
+    display: block;
+  }
+
+  &:hover h3 {
+    place-self: unset;
+    margin-bottom: 0;
+  }
 }
 
 .trainer h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
+  margin-top: 0;
+  margin-bottom: 30px;
+  place-self: flex-end;
 }
 
 .trainer p {
   color: #b6bdcc;
+  display: none;
+}
+
+.trainer ul {
+  flex-direction: column;
+  display: none;
 }
 
 .trainer ul li::before {

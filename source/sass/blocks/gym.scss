@@ -1,3 +1,8 @@
+.gym {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
 .gym .lead {
   font-weight: 400;
   font-size: 18px;
@@ -8,4 +13,24 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
+}
+
+.gym .container {
+  display: grid;
+  grid-template-columns: 355px 1fr 1fr;
+  column-gap: 30px;
+  min-height: 516px;
+}
+
+.gym__img {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  justify-self: flex-end;
+}
+
+.gym__video {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  align-self: flex-end;
+  z-index: 1;
 }

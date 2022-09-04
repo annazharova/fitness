@@ -1,0 +1,23 @@
+.contacts {
+  padding-left: 120px;
+  border-top: 1px solid #74819c;
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 404px;
+  column-gap: 50px;
+}
+
+.contacts__wrapper h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contacts__wrapper p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

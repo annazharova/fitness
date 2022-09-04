@@ -1,0 +1,28 @@
+.header {
+  color: $color-white;
+  background-color: $color-active;
+  background-image: url("../img/intro-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 658px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-bg@2x.webp");
+    background-size: cover;
+  }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: $color-white;
+}
+
+.header .logo__img {
+  fill: $color-white;
+}

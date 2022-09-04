@@ -3,6 +3,13 @@
   color: $color-white;
 }
 
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 108px;
+}
+
 .footer a {
   color: $color-white;
 }
@@ -15,4 +22,5 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }

@@ -1,0 +1,17 @@
+.footer-nav {
+  display: flex;
+  min-width: 770px;
+  justify-content: space-between;
+}
+
+.footer-nav__list {
+  min-width: 431px;
+  justify-content: space-between;
+}
+
+.footer-social__link {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}

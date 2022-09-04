@@ -1,16 +1,36 @@
 .intro {
-  background-image: url("../img/intro-bg.jpg");
-  background-color: $color-active;
   color: $color-white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 658px;
+}
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/intro-bg@2x.jpg");
-    background-size: cover;
-  }
+.intro__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 145px;
+  column-gap: 65px;
+}
+
+.intro__text {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  grid-template-rows: 160px 120px 1fr 60px;
+}
+
+.intro__text p {
+  font-family: $ff-bebasneue;
+  font-weight: 400;
+  font-size: 49px;
+  line-height: 59px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  grid-column: 2 / -1;
+  text-align: right;
+  margin: 0;
+  place-self: end;
+}
+
+.intro__text ul {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  text-align: right;
 }
 
 .intro h1 {
@@ -22,14 +42,13 @@
   font-size: 109px;
   line-height: 109px;
   text-align: right;
+
+  grid-column: 1 / -1;
+  grid-row: 2 / 4;
 }
 
 .intro a {
   color: $color-white;
-}
-
-.intro .logo__img {
-  fill: $color-white;
 }
 
 .intro ul {
@@ -48,5 +67,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  grid-column: 1 / -1;
+  place-self: self-end;
 }
 

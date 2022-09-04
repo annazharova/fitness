@@ -1,0 +1,48 @@
+.free-lesson {
+  display: flex;
+  justify-content: end;
+  padding-right: 170px;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.free-lesson h2 {
+  color: $color-white;
+}
+
+.free-lesson form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+
+.free-lesson input {
+  border: none;
+  border-bottom: 1px solid #74819c;
+  background-color: transparent;
+  width: 100%;
+}
+
+.free-lesson input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-white;
+}
+
+.free-lesson .button {
+  width: 410px;
+  height: 52px;
+  border: 3px solid $color-white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-top: 30px;
+  grid-column: 1 / -1;
+}
