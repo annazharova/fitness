@@ -1152,28 +1152,24 @@ button,
 .advantages {
   background-color: #f8f9fc;
   min-height: 664px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantages ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 240px 1fr;
   grid-template-columns: 1fr 240px 1fr;
-  height: 407px;
-}
-
-.advantages ul li:nth-child(3) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2 / 3;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  grid-row: 1 / 3;
-  background-color: #1c3374;
-  color: #ffffff;
+  height: 307px;
+  -webkit-column-gap: 60px;
+  -moz-column-gap: 60px;
+  column-gap: 60px;
+  row-gap: 100px;
+  max-width: 1040px;
 }
 
 .advantages .quantity {
@@ -1181,7 +1177,7 @@ button,
   background: linear-gradient(142.51deg, #D10A42 0%, #0041CA 87.33%);
   font-weight: 700;
   font-size: 71px;
-  line-height: 150%;
+  line-height: 80%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1193,16 +1189,86 @@ button,
   line-height: 150%;
 }
 
+.advantages h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .advantages h3 {
   font-weight: 700;
   font-size: 22px;
   line-height: 150%;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .advantages .description {
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+}
+
+.advantages__item {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content 1fr;
+  -ms-grid-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.advantages__item p {
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 60px -webkit-min-content;
+  -ms-grid-rows: 60px min-content;
+  grid-template-rows: 60px -webkit-min-content;
+  grid-template-rows: 60px min-content;
+}
+
+.advantages__central {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  background-color: #1c3374;
+  color: #ffffff;
+  text-align: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0 34px;
+}
+
+.advantages__central .quantity {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 150%;
+  color: #ffffff;
+  background: transparent;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+}
+
+.advantages__central .measure {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 150%;
+  color: #ffffff;
 }
 
 .promo ul {
