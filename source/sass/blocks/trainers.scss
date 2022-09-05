@@ -1,10 +1,25 @@
-.trainers  ul {
+.trainers {
+  margin-bottom: 120px;
+}
+
+.trainers h2 {
+  margin-bottom: 62px;
+}
+
+.trainers ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trainers__list {
+  width: 1160px;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .trainers__item {
@@ -18,13 +33,13 @@
   top: 0;
 }
 
-.swiper {
-  width: 672px;
-  height: 242px;
+.trainers .swiper {
+  width: 1272px;
+  height: 294px;
 }
 
-.swiper-button-next:after,
-.swiper-button-prev:after {
+.trainers .swiper-button-next:after,
+.trainers .swiper-button-prev:after {
   color: #AFAFAF;
   width: 16px;
   height: 32px;

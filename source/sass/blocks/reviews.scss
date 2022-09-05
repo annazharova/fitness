@@ -24,3 +24,15 @@
 .reviews p {
   grid-column: 2 / 3;
 }
+
+.reviews .swiper {
+  width: 672px;
+  height: 242px;
+}
+
+.reviews .swiper-button-next:after,
+.reviews .swiper-button-prev:after {
+  color: #AFAFAF;
+  width: 16px;
+  height: 32px;
+}
