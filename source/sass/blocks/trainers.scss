@@ -4,7 +4,7 @@
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .trainers__item {
@@ -16,4 +16,16 @@
 .trainers__img {
   position: absolute;
   top: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1160px;
 }

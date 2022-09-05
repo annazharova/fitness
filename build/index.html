@@ -6,6 +6,8 @@
     <meta name="description" content="Фитнес-центр Supergym в Омске">
     <title>Фитнес-центр Supergym</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.css"/>
     <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font">
   </head>
   <body class="page__body">
@@ -23,7 +25,7 @@
       </div>
       <section class="intro container">
         <div class="intro__wrapper">
-        <div class="intro__text">
+          <div class="intro__text">
             <h1>Фитнес центр</h1>
             <p>Омск</p>
             <ul>
@@ -46,6 +48,7 @@
             <img class="travel__img" src="img/superman.jpg" srcset="img/superman@2x.jpg 2x" width="560" height="301" alt="Мужчина в костюме супермена.">
           </picture>
           <section class="social">
+            <h2 class="visually-hidden">Мы в социальных сетях</h2>
             <ul class="social__list">
               <li class="social__item">Fb</li>
               <li class="social__item">Vk</li>
@@ -82,9 +85,15 @@
       <section class="membership" id="membership">
         <div class="container">
           <h2>Абонементы</h2>
-          <ul class="membership__list">
-            <li class="membership__item">
-              <h3>1 месяц</h3>
+          <div class="tabs">
+            <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+            <label for="tab-btn-1">1 месяц</label>
+            <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+            <label for="tab-btn-2">6 месяцев</label>
+            <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+            <label for="tab-btn-3">12 месяцев</label>
+            <div class="membership__tabs" id="content-1">
+              <h3 class="visually-hidden">1 месяц</h3>
               <ul class="membership__tab">
                 <li class="membership__tile">
                   <h4>С тренером</h4>
@@ -123,9 +132,9 @@
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
-            </li>
-            <li class="membership__item">
-              <h3>6 месяцев</h3>
+            </div>
+            <div class="membership__tabs" id="content-2">
+              <h3 class="visually-hidden">6 месяцев</h3>
               <ul class="membership__tab">
                 <li class="membership__tile">
                   <h4>С тренером</h4>
@@ -164,9 +173,9 @@
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
-            </li>
-            <li class="membership__item">
-              <h3>12 месяцев</h3>
+            </div>
+            <div class="membership__tabs" id="content-3">
+              <h3 class="visually-hidden">12 месяцев</h3>
               <ul class="membership__tab">
                 <li class="membership__tile">
                   <h4>С тренером</h4>
@@ -205,22 +214,22 @@
                   <a class="button" href="#">купить абонемент</a>
                 </li>
               </ul>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </section>
       <div class="container">
         <section class="supergames">
           <div class="supergames__wrapper">
             <h2>Super games</h2>
-            <p>Ежегодные соревнования по CrossFit</p>
-            <p>Дата</p>
-            <p>
+            <p class="supergames__description">Ежегодные соревнования по CrossFit</p>
+            <p class="supergames__date">
+              <span>Дата</span>
               <span>7</span>
               <span>Марта</span>
               <span>2019</span>
             </p>
-            <p>
+            <p class="supergames__time">
               <span>Время</span>
               <span>12:00</span>
             </p>
@@ -243,256 +252,242 @@
       <section class="trainers">
         <div class="container">
           <h2>Тренеры</h2>
-          <ul class="trainers__list">
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pavlova.webp 1x, img/trainers/pavlova@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pavlova-tablet.webp 1x, img/trainers/pavlova-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pavlova-mobile.webp 1x, img/trainers/pavlova-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pavlova.jpg 1x, img/trainers/pavlova@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pavlova-tablet.jpg 1x, img/trainers/pavlova-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pavlova-mobile.jpg" srcset="img/trainers/pavlova-mobile@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
-              </picture>
-              <article class="trainer">
-                <h3>Анна Павлова</h3>
-                <p>Йога</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/lavrov.webp 1x, img/trainers/lavrov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/lavrov-tablet.webp 1x, img/trainers/lavrov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/lavrov-mobile.webp 1x, img/trainers/lavrov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/lavrov.jpg 1x, img/trainers/lavrov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/lavrov-tablet.jpg 1x, img/trainers/lavrov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/lavrov-mobile.jpg" srcset="img/trainers/lavrov-mobile@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
-              </picture>
-              <article class="trainer">
-                <h3>Алексей Лавров</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
-              </picture>
-              <article class="trainer">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/ketova.webp 1x, img/trainers/ketova@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/ketova-tablet.webp 1x, img/trainers/ketova-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/ketova-mobile.webp 1x, img/trainers/ketova-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/ketova.jpg 1x, img/trainers/ketova@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/ketova-tablet.jpg 1x, img/trainers/ketova-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/ketova-mobile.jpg" srcset="img/trainers/ketova-mobile@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
-              </picture>
-              <article class="trainer">
-                <h3>Мария Кетова</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
-              </picture>
-              <article class="trainer">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
-              </picture>
-              <article class="trainer">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
-              </picture>
-              <article class="trainer">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-            </li>
-            <li class="trainers__item">
-              <picture>
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
-                <!-- 1х: 260px; 2x: 520px -->
-                <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
-                <!-- 1х: 309px; 2x: 618px -->
-                <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
-              </picture>
-              <article class="trainer">
-                <h3>Александр Пашков</h3>
-                <p>CrossFit</p>
-                <ul>
-                  <li>Certified Level 3 Trainer</li>
-                  <li>Победитель чемпионата России по CrossFit</li>
-                  <li>Опыт — 6 лет</li>
-                </ul>
-              </article>
-            </li>
-          </ul>
         </div>
+        <ul class="trainers__list">
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pavlova.webp 1x, img/trainers/pavlova@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pavlova-tablet.webp 1x, img/trainers/pavlova-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pavlova-mobile.webp 1x, img/trainers/pavlova-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pavlova.jpg 1x, img/trainers/pavlova@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pavlova-tablet.jpg 1x, img/trainers/pavlova-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pavlova-mobile.jpg" srcset="img/trainers/pavlova-mobile@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
+            </picture>
+            <article class="trainer">
+              <h3>Анна Павлова</h3>
+              <p>Йога</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/lavrov.webp 1x, img/trainers/lavrov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/lavrov-tablet.webp 1x, img/trainers/lavrov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/lavrov-mobile.webp 1x, img/trainers/lavrov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/lavrov.jpg 1x, img/trainers/lavrov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/lavrov-tablet.jpg 1x, img/trainers/lavrov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/lavrov-mobile.jpg" srcset="img/trainers/lavrov-mobile@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
+            </picture>
+            <article class="trainer">
+              <h3>Алексей Лавров</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+            <article class="trainer">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/ketova.webp 1x, img/trainers/ketova@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/ketova-tablet.webp 1x, img/trainers/ketova-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/ketova-mobile.webp 1x, img/trainers/ketova-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/ketova.jpg 1x, img/trainers/ketova@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/ketova-tablet.jpg 1x, img/trainers/ketova-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/ketova-mobile.jpg" srcset="img/trainers/ketova-mobile@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
+            </picture>
+            <article class="trainer">
+              <h3>Мария Кетова</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+            <article class="trainer">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+            <article class="trainer">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+            <article class="trainer">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+          <li class="trainers__item">
+            <picture>
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" type="image/webp" srcset="img/trainers/pashkov.webp 1x, img/trainers/pashkov@2x.webp 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" type="image/webp" srcset="img/trainers/pashkov-tablet.webp 1x, img/trainers/pashkov-tablet@2x.webp 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <source type="image/webp" srcset="img/trainers/pashkov-mobile.webp 1x, img/trainers/pashkov-mobile@2x.webp 2x">
+              <!-- 1х: 260px; 2x: 520px -->
+              <source media="(min-width: 1366px)" srcset="img/trainers/pashkov.jpg 1x, img/trainers/pashkov@2x.jpg 2x">
+              <!-- 1х: 309px; 2x: 618px -->
+              <source media="(min-width: 768px)" srcset="img/trainers/pashkov-tablet.jpg 1x, img/trainers/pashkov-tablet@2x.jpg 2x">
+              <!-- 1х: 270px; 2x: 540px -->
+              <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
+            </picture>
+            <article class="trainer">
+              <h3>Александр Пашков</h3>
+              <p>CrossFit</p>
+              <ul>
+                <li>Certified Level 3 Trainer</li>
+                <li>Победитель чемпионата России по CrossFit</li>
+                <li>Опыт — 6 лет</li>
+              </ul>
+            </article>
+          </li>
+        </ul>
       </section>
       <section class="advantages">
         <div class="container">
           <h2>Наши преимущества</h2>
           <ul>
             <li>
-              <p>
-                <span class="quantity">900</span>
-                <span class="measure">кв.м</span>
-                <h3>Площадь</h3>
-                <span class="description">Занимайтесь без очередей и толкучки</span>
-              </p>
+              <span class="quantity">900</span>
+              <span class="measure">кв.м</span>
+              <h3>Площадь</h3>
+              <span class="description">Занимайтесь без очередей и толкучки</span>
             </li>
             <li>
-              <p>
-                <span class="quantity">70</span>
-                <span class="measure">машин</span>
-                <h3>Собственная парковка</h3>
-                <span class="description">Вы всегда найдете место для своей машины на нашей парковке</span>
-              </p>
+              <span class="quantity">70</span>
+              <span class="measure">машин</span>
+              <h3>Собственная парковка</h3>
+              <span class="description">Вы всегда найдете место для своей машины на нашей парковке</span>
             </li>
             <li>
-              <p>
-                <span>100</span>
-                <span>Тренажеров</span>
-                <span>Современные тренажеры на все группы мышц</span>
-              </p>
+              <span>100</span>
+              <span>Тренажеров</span>
+              <span>Современные тренажеры на все группы мышц</span>
             </li>
             <li>
-              <p>
-                <span class="quantity">350</span>
-                <span class="measure">мест</span>
-                <h3>Комфорт</h3>
-                <span class="description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</span>
-              </p>
+              <span class="quantity">350</span>
+              <span class="measure">мест</span>
+              <h3>Комфорт</h3>
+              <span class="description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</span>
             </li>
             <li>
-              <p>
-                <span class="quantity">5+</span>
-                <span class="measure">лет</span>
-                <h3>Тренерский опыт</h3>
-                <span class="description">Добивайтесь своих целей быстрее с профессиональным тренером</span>
-              </p>
+              <span class="quantity">5+</span>
+              <span class="measure">лет</span>
+              <h3>Тренерский опыт</h3>
+              <span class="description">Добивайтесь своих целей быстрее с профессиональным тренером</span>
             </li>
           </ul>
         </div>
@@ -590,12 +585,12 @@
     <footer class="footer">
       <div class="container">
         <nav class="footer-nav">
-              <a class="logo" href="#">
-                <span class="visually-hidden">Главная страница</span>
-                <svg width="89" height="20">
-                  <use href="img/sprite_auto.svg#logo"></use>
-                </svg>
-              </a>
+          <a class="logo" href="#">
+            <span class="visually-hidden">Главная страница</span>
+            <svg width="89" height="20">
+              <use href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
           <ul class="footer-nav__list">
             <li>
               <a class="" href="#">Услуги</a>
