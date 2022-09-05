@@ -1,11 +1,4 @@
-.reviews ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.reviews li {
+.reviews article {
   width: 560px;
   height: 242px;
   background-color: #1c3374;
@@ -16,6 +9,7 @@
   grid-template-rows: 30px 1fr;
   grid-template-columns: 108px 1fr;
   padding: 62px;
+  margin: 0 auto;
 }
 
 .reviews__img {

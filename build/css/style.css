@@ -1054,20 +1054,15 @@ button,
 }
 
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 672px;
+  height: 242px;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  max-width: 1160px;
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: #AFAFAF;
+  width: 16px;
+  height: 32px;
 }
 
 .trainer {
@@ -1227,16 +1222,7 @@ button,
   background-position-x: right;
 }
 
-.reviews ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.reviews li {
+.reviews article {
   width: 560px;
   height: 242px;
   background-color: #1c3374;
@@ -1251,6 +1237,7 @@ button,
   -ms-grid-columns: 108px 1fr;
   grid-template-columns: 108px 1fr;
   padding: 62px;
+  margin: 0 auto;
 }
 
 .reviews__img {

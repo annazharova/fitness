@@ -55,8 +55,6 @@
     "webpack-stream": "5.2.1"
   },
   "dependencies": {
-    "@squoosh/cli": "^0.7.2",
-    "nouislider": "^15.6.1",
-    "swiper": "^8.3.2"
+    "@squoosh/cli": "^0.7.2"
   }
 }

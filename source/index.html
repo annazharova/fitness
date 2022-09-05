@@ -6,8 +6,7 @@
     <meta name="description" content="Фитнес-центр Supergym в Омске">
     <title>Фитнес-центр Supergym</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.0/nouislider.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font">
   </head>
   <body class="page__body">
@@ -518,28 +517,36 @@
       <section class="reviews">
         <div class="container">
           <h2>Отзывы</h2>
-          <ul>
-            <li>
-              <h3>Анна Орлова</h3>
-              <picture>
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
-              </picture>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-            <li>
-              <h3>Анна Орлова</h3>
-              <picture>
-                <!-- 1х: 270px; 2x: 540px -->
-                <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
-                <!-- 1х: 270px; 2x: 540px -->
-                <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
-              </picture>
-              <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-            </li>
-          </ul>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <article>
+                    <h3>Анна Орлова</h3>
+                    <picture>
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
+                      <!-- 1х: 270px; 2x: 540px -->
+                      <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+                    </picture>
+                    <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  </article>
+                </div>
+              <div class="swiper-slide">
+                <article>
+                  <h3>Алла Круглова</h3>
+                  <picture>
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <source type="image/webp" srcset="img/avatars/orlova.webp 1x, img/avatars/orlova@2x.webp 2x">
+                    <!-- 1х: 270px; 2x: 540px -->
+                    <img class="reviews__img" src="img/avatars/orlova.jpg" srcset="img/avatars/orlova@2x.jpg 2x" width="80" height="80" alt="Анна Орлова">
+                  </picture>
+                  <p>«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </article>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </section>
       <div class="bottom">
@@ -637,6 +644,7 @@
         </section>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

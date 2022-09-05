@@ -169,6 +169,17 @@ window.addEventListener('DOMContentLoaded', function () {
 //   })
 // }
 
+var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  }
+});
+
 /***/ }),
 
 /***/ "./js/modules/modals/init-modals.js":
