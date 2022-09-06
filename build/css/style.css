@@ -1437,7 +1437,6 @@ button,
 .free-lesson h2 {
   color: #ffffff;
   padding-bottom: 58px;
-  text-align: center;
 }
 
 .free-lesson form {
@@ -1612,6 +1611,14 @@ button,
     color: $color-white;
   }
 } */
+
+@media (max-width: 1260px) {
+  .trainers__list {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+}
 
 @media (max-width: 1199px) {
   .container {
