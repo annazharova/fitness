@@ -11,6 +11,15 @@
     background-image: url("../img/intro-bg@2x.webp");
     background-size: cover;
   }
+
+  @media (max-width: $vp-tablet) {
+    min-height: 554px;
+    background-image: url("../img/intro-bg-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bg-tablet@2x.webp");
+    }
+  }
 }
 
 .header .container {
@@ -25,4 +34,9 @@
 
 .header .logo__img {
   fill: $color-white;
+
+  @media (max-width: $vp-tablet) {
+    width: 82px;
+    height: 17px;
+  }
 }

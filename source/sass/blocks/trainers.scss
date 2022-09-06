@@ -1,5 +1,9 @@
 .trainers {
   margin-bottom: 120px;
+
+  @media (max-width: $vp-tablet) {
+    margin-bottom: 100px;
+  }
 }
 
 .trainers h2 {
@@ -21,9 +25,9 @@
   justify-content: space-between;
   margin: 0 auto;
 
-    @media (max-width: 1260px) {
-      justify-content: space-evenly;
-    }
+  @media (max-width: 1260px) {
+    justify-content: space-evenly;
+  }
 }
 
 .trainers__item {

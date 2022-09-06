@@ -701,7 +701,7 @@ button,
   margin: 0;
   text-transform: uppercase;
   font-size: 109px;
-  line-height: 109px;
+  line-height: 100%;
   text-align: right;
   grid-column: 1 / -1;
   -ms-grid-row: 2;
@@ -744,7 +744,7 @@ button,
 .phone {
   font-family: "Bebas Neue", "Arial", sans-serif;
   font-size: 26px;
-  line-height: 26px;
+  line-height: 100%;
   letter-spacing: 0.03em;
 }
 
@@ -906,7 +906,6 @@ button,
 }
 
 .membership__tabs {
-  /* скрыть контент по умолчанию */
   display: none;
 }
 
@@ -1624,6 +1623,115 @@ button,
   .container {
     padding-right: 45px;
     padding-left: 45px;
+  }
+
+  .header {
+    min-height: 554px;
+    background-image: url("../img/intro-bg-tablet.webp");
+  }
+
+  .header .logo__img {
+    width: 82px;
+    height: 17px;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .intro__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .intro__text {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 190px;
+    grid-template-columns: 1fr 190px;
+    -ms-grid-rows: 120px 82px 1fr 60px;
+    grid-template-rows: 120px 82px 1fr 60px;
+  }
+
+  .intro__text p {
+    font-size: 34px;
+    line-height: 41px;
+  }
+
+  .intro__text li {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .intro h1 {
+    font-size: 86px;
+  }
+
+  .intro .button {
+    width: 183px;
+  }
+
+  .phone {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .gym {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .membership {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .membership__tab {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    -webkit-column-gap: unset;
+    -moz-column-gap: unset;
+    column-gap: unset;
+    row-gap: 40px;
+  }
+
+  .membership__tile {
+    width: 442px;
+    margin: 0 auto;
+  }
+
+  .supergames {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .trainers {
+    margin-bottom: 100px;
+  }
+
+  .advantages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .promo {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .bottom {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/intro-bg-tablet@2x.webp");
   }
 }
 

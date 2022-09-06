@@ -12,6 +12,11 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/plates@2x.png");
   }
+
+  @media (max-width: $vp-tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .membership h2 {
@@ -32,6 +37,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
   padding-top: 40px;
+
+  @media (max-width: $vp-tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: unset;
+    row-gap: 40px;
+  }
 }
 
 .membership__tile {
@@ -43,6 +55,11 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: $vp-tablet) {
+    width: 442px;
+    margin: 0 auto;
+  }
 }
 
 .membership__tile h4 {
@@ -92,9 +109,7 @@
 }
 
 .membership__tabs {
-  /* скрыть контент по умолчанию */
   display: none;
-  // padding: 10px 15px;
 }
 
 /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
