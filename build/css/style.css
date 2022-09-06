@@ -577,10 +577,8 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1160px;
   margin: 0 auto;
-  padding-right: 103px;
-  padding-left: 103px;
 }
 
 .page__body {
@@ -1069,7 +1067,7 @@ button,
 }
 
 .trainers .swiper {
-  width: 1272px;
+  max-width: 1272px;
   height: 294px;
 }
 
