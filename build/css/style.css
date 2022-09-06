@@ -1625,6 +1625,11 @@ button,
     padding-left: 45px;
   }
 
+  .page h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
   .header {
     min-height: 554px;
     background-image: url("../img/intro-bg-tablet.webp");
@@ -1708,6 +1713,23 @@ button,
   .supergames {
     margin-top: 100px;
     margin-bottom: 100px;
+    height: 292px;
+  }
+
+  .supergames .button {
+    width: 202px;
+    height: 39px;
+    font-size: 10px;
+    line-height: 12px;
+    border: 2px solid #ffffff;
+  }
+
+  .supergames__wrapper {
+    padding: 51px 45px;
+  }
+
+  .supergames__description {
+    font-size: 12px;
   }
 
   .trainers {
