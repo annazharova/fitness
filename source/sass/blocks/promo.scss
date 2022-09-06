@@ -1,3 +1,13 @@
+.promo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.promo h2 {
+  padding-bottom: 62px;
+  text-align: center;
+}
+
 .promo ul {
   list-style: none;
   padding: 0;
@@ -12,6 +22,14 @@
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
+  padding: 35px;
+  color: $color-hover;
+}
+
+.promo h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .promo .hot {
@@ -29,4 +47,43 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-photo@2x.webp");
   }
+}
+
+.promo__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-hover;
+}
+
+.promo .duration {
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.promo .price {
+  font-weight: 700;
+  font-size: 70px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.promo .description {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+  width: 190px;
+  margin-top: 0;
+}
+
+.hot .promo__link {
+  color: $color-white;
+  border-bottom: 1px solid $color-white;
+  margin-left: 10px;
 }

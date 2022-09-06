@@ -1271,6 +1271,16 @@ button,
   color: #ffffff;
 }
 
+.promo {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.promo h2 {
+  padding-bottom: 62px;
+  text-align: center;
+}
+
 .promo ul {
   list-style: none;
   padding: 0;
@@ -1287,6 +1297,14 @@ button,
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
+  padding: 35px;
+  color: #1c3374;
+}
+
+.promo h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 26px;
 }
 
 .promo .hot {
@@ -1301,6 +1319,45 @@ button,
   background-size: 50%;
   background-position-y: center;
   background-position-x: right;
+}
+
+.promo__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1c3374;
+}
+
+.promo .duration {
+  font-weight: 700;
+  font-size: 28px;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.promo .price {
+  font-weight: 700;
+  font-size: 70px;
+  margin-left: 10px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+.promo .description {
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+  width: 190px;
+  margin-top: 0;
+}
+
+.hot .promo__link {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-left: 10px;
 }
 
 .reviews article {
@@ -1325,6 +1382,11 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+}
+
+.reviews h2 {
+  padding-bottom: 62px;
+  text-align: center;
 }
 
 .reviews h3 {
@@ -1370,10 +1432,14 @@ button,
   padding-right: 170px;
   background-color: #102654;
   color: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .free-lesson h2 {
   color: #ffffff;
+  padding-bottom: 58px;
+  text-align: center;
 }
 
 .free-lesson form {
@@ -1454,6 +1520,8 @@ button,
 .contacts {
   padding-left: 120px;
   border-top: 1px solid #74819c;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .contacts__wrapper {
