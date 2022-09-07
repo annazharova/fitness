@@ -957,6 +957,11 @@ button,
   height: 500px;
   margin-top: 120px;
   margin-bottom: 120px;
+  background-image: url("../img/crossfit-photo.webp");
+  background-repeat: no-repeat;
+  background-size: 57.3%;
+  background-position-y: center;
+  background-position-x: right;
 }
 
 .supergames .button {
@@ -1007,12 +1012,14 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  margin: 0;
 }
 
 .supergames__time {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
+  margin: 0;
 }
 
 .supergames__description {
@@ -1066,7 +1073,12 @@ button,
 }
 
 .trainers .swiper {
-  max-width: 1272px;
+  max-width: 1270px;
+  height: 294px;
+}
+
+.trainers .swiper-wrapper {
+  max-width: 1160px;
   height: 294px;
 }
 
@@ -1088,6 +1100,7 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
+  width: 264px;
 }
 
 .trainer:hover {
@@ -1713,6 +1726,7 @@ button,
     margin-top: 100px;
     margin-bottom: 100px;
     height: 292px;
+    background-image: url("../img/crossfit-photo-tablet.webp");
   }
 
   .supergames .button {
@@ -1794,13 +1808,53 @@ button,
   }
 
   .bottom {
-    margin-top: 100px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .free-lesson {
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
+    padding-right: 0;
+  }
+
+  .free-lesson__wrapper {
+    padding-right: 45px;
+    padding-left: 133px;
+  }
+
+  .contacts {
+    padding-right: 45px;
+    padding-left: 133px;
+  }
+
+  .footer a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer-nav {
+    min-width: 535px;
+  }
+
+  .footer-nav__list {
+    min-width: 391px;
+  }
+
+  .footer-nav__img {
+    width: 82px;
+    height: 18px;
   }
 }
 
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/intro-bg-tablet@2x.webp");
+  }
+
+  .supergames {
+    background-image: url("../img/crossfit-photo-tablet@2x.webp");
   }
 
   .promo .hot {
@@ -1823,6 +1877,10 @@ button,
 
   .membership {
     background-image: url("../img/plates@2x.png");
+  }
+
+  .supergames {
+    background-image: url("../img/crossfit-photo@2x.webp");
   }
 
   .promo .hot {

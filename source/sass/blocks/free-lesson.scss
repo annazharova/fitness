@@ -6,6 +6,18 @@
   color: $color-white;
   padding-top: 70px;
   padding-bottom: 70px;
+
+  @media (max-width: $vp-tablet) {
+    justify-content: unset;
+    padding-right: 0;
+  }
+}
+
+.free-lesson__wrapper {
+  @media (max-width: $vp-tablet) {
+    padding-right: 45px;
+    padding-left: 133px;
+  }
 }
 
 .free-lesson h2 {

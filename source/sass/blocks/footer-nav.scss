@@ -2,11 +2,19 @@
   display: flex;
   min-width: 770px;
   justify-content: space-between;
+
+  @media (max-width: $vp-tablet) {
+    min-width: 535px;
+  }
 }
 
 .footer-nav__list {
   min-width: 431px;
   justify-content: space-between;
+
+  @media (max-width: $vp-tablet) {
+    min-width: 391px;
+  }
 }
 
 .footer-social__link {
@@ -14,4 +22,11 @@
   height: 35px;
   width: 35px;
   padding: 5px;
+}
+
+.footer-nav__img {
+  @media (max-width: $vp-tablet) {
+    width: 82px;
+    height: 18px;
+  }
 }

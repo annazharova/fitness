@@ -3,6 +3,11 @@
   border-top: 1px solid #74819c;
   padding-top: 70px;
   padding-bottom: 70px;
+
+  @media (max-width: $vp-tablet) {
+    padding-right: 45px;
+    padding-left: 133px;
+  }
 }
 
 .contacts__wrapper {

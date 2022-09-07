@@ -185,7 +185,7 @@ if (window.outerWidth > 1199) {
 
 var trainersSwiper = new Swiper(".trainers-swiper", {
   slidesPerView: slidesPerView,
-  spaceBetween: spaceBetween,
+  spaceBetween: 0,
   slidesPerGroup: 1,
   direction: 'horizontal',
   loop: true,
@@ -197,7 +197,7 @@ var trainersSwiper = new Swiper(".trainers-swiper", {
 });
 var reviewSwiper = new Swiper(".review-swiper", {
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   slidesPerGroup: 1,
   direction: 'horizontal',
   loop: true,
