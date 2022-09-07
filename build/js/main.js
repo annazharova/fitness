@@ -183,9 +183,21 @@ if (window.outerWidth > 1199) {
   spaceBetween = 40;
 }
 
-var swiper = new Swiper(".mySwiper", {
+var trainersSwiper = new Swiper(".trainers-swiper", {
   slidesPerView: slidesPerView,
   spaceBetween: spaceBetween,
+  slidesPerGroup: 1,
+  direction: 'horizontal',
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
+});
+var reviewSwiper = new Swiper(".review-swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
   slidesPerGroup: 1,
   direction: 'horizontal',
   loop: true,
