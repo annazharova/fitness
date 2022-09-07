@@ -92,14 +92,29 @@ window.addEventListener('DOMContentLoaded', () => {
 //   })
 // }
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
+let slidesPerView;
+let spaceBetween;
+
+if (window.outerWidth > 1199) {
+  slidesPerView = 4;
+  spaceBetween = 30;
+} else if (window.outerWidth < 767) {
+  slidesPerView = 1;
+  spaceBetween = 30;
+} else {
+  slidesPerView = 2;
+  spaceBetween = 40;
+}
+
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: slidesPerView,
+  spaceBetween: spaceBetween,
+  slidesPerGroup: 1,
   direction: 'horizontal',
   loop: true,
-
-  // Navigation arrows
+  loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
