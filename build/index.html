@@ -66,16 +66,18 @@
           </div>
           <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/watch?v=9TZXsZItgdw"></iframe>
           <picture class="gym__img">
-            <!-- 1х: 560px; 2x: 1120px -->
+            <!-- 1х: 660px; 2x: 1320px -->
             <source media="(min-width: 1200px)" type="image/webp" srcset="img/gym-photo.webp 1x, img/gym-photo@2x.webp 2x">
-            <!-- 1х: 324px; 2x: 648px -->
-            <!-- <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-photo-tablet.webp 1x, img/gym-photo-tablet@2x.webp 2x"> -->
-            <!-- 1х: 560px; 2x: 1120px -->
-            <!-- <source media="(min-width: 1200px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x"> -->
-            <!-- 1х: 324px; 2x: 648px -->
-            <!-- <source media="(min-width: 768px)" srcset="img/gym-photo-tablet.png 1x, img/gym-photo-tablet@2x.png 2x"> -->
-            <!-- 1х: 290px; 2x: 580px -->
-            <img class="gym__img" src="img/gym-photo.jpg" srcset="img/gym-photo@2x.jpg 2x" width="660" height="401" alt="Зал с тренажёрами.">
+            <!-- 1х: 560px; 2x: 1356px -->
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-photo-tablet.webp 1x, img/gym-photo-tablet@2x.webp 2x">
+            <!-- 1х: 320px; 2x: 640px -->
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/gym-photo-mobile.webp 1x, img/gym-photo-mobile@2x.webp 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source media="(min-width: 1200px)" srcset="img/gym-photo.png 1x, img/gym-photo@2x.png 2x">
+            <!-- 1х: 560px; 2x: 1356px -->
+            <source media="(min-width: 768px)" srcset="img/gym-photo-tablet.png 1x, img/gym-photo-tablet@2x.png 2x">
+            <!-- 1х: 320px; 2x: 640px -->
+            <img class="gym__img" src="img/gym-photomobile.jpg" srcset="img/gym-photo-mobile@2x.jpg 2x" width="320" height="313" alt="Зал с тренажёрами.">
           </picture>
         </div>
       </section>
@@ -238,6 +240,7 @@
         <div class="container">
           <h2>Тренеры</h2>
         </div>
+        <div class="trainers__slider">
           <div class="swiper trainers-swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -441,9 +444,10 @@
                 </article>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
+          <div class="swiper-button-next trainers-nav-next"></div>
+          <div class="swiper-button-prev trainers-nav-prev"></div>
+        </div>
       </section>
       <section class="advantages">
         <div class="container">

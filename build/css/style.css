@@ -1081,9 +1081,13 @@ button,
   top: 0;
 }
 
-.trainers .swiper {
+.trainers__slider {
   max-width: 1270px;
-  height: 294px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: 264;
 }
 
 .trainers .swiper-wrapper {
@@ -1674,8 +1678,6 @@ button,
   }
 
   .intro__text {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 190px;
     grid-template-columns: 1fr 190px;
     -ms-grid-rows: 120px 82px 1fr 60px;
@@ -1875,6 +1877,106 @@ button,
   .container {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .page h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .header {
+    min-height: 491px;
+    background-image: url("../img/intro-bg-mobile.webp");
+  }
+
+  .intro__text {
+    -ms-grid-columns: 1fr 175px;
+    grid-template-columns: 1fr 175px;
+  }
+
+  .intro h1 {
+    font-size: 78px;
+  }
+
+  .intro .button {
+    width: 290px;
+  }
+
+  .gym {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .gym .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__img {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .gym__video {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .gym__description {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .gym__description p:last-child {
+    display: none;
+  }
+
+  .membership {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .membership__tile {
+    padding: 55px 42px;
+    width: 290px;
+    height: 384px;
+  }
+
+  .membership__tile h4 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .membership__tile .price {
+    font-size: 48px;
+  }
+
+  .membership__tile .price-shadow {
+    font-size: 80px;
+    margin-bottom: -75px;
+  }
+
+  .membership__tile .price__img {
+    width: 24px;
+    height: 33px;
+  }
+
+  .tabs > label {
+    margin: 0 9px;
+  }
+}
+
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: url("../img/intro-bg-mobile@2x.webp");
   }
 }
 

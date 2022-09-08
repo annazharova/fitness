@@ -93,7 +93,6 @@ window.addEventListener('DOMContentLoaded', () => {
 // }
 
 const trainersSwiper = new Swiper(".trainers-swiper", {
-  slidesPerGroup: 1,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -104,16 +103,16 @@ const trainersSwiper = new Swiper(".trainers-swiper", {
       spaceBetween: 40
     },
     1200: {
-      slidesPerView: 4,
+      slidesPerView: 'auto',
       spaceBetween: 30
     }
   },
+  slidesPerView: 'auto',
   direction: 'horizontal',
   loop: true,
-  loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next.trainers-nav-next",
+    prevEl: ".swiper-button-prev.trainers-nav-prev",
   },
 });
 

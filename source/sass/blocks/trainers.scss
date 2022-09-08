@@ -41,9 +41,13 @@
   top: 0;
 }
 
-.trainers .swiper {
+.trainers__slider {
   max-width: 1270px;
-  height: 294px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  width: 264;
 }
 
 .trainers .swiper-wrapper {
