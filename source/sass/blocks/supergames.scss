@@ -24,6 +24,22 @@
       background-image: url("../img/crossfit-photo-tablet@2x.webp");
     }
   }
+
+  @media (max-width: $vp-mobile) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 584px;
+    background-image: url("../img/crossfit-photo-mobile.webp");
+    background-size: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/crossfit-photo-mobile@2x.webp");
+    }
+  }
 }
 
 .supergames .button {

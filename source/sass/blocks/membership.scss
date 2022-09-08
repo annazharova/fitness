@@ -16,11 +16,21 @@
   @media (max-width: $vp-tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
+    background-image: url("../img/plates-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/plates-tablet@2x.png");
+    }
   }
 
   @media (max-width: $vp-mobile) {
     padding-top: 70px;
     padding-bottom: 70px;
+    background-image: unset;
+
+    @media (min-resolution: 2dppx) {
+      background-image: unset;
+    }
   }
 }
 
