@@ -20,6 +20,15 @@
       background-image: url("../img/intro-bg-tablet@2x.webp");
     }
   }
+
+  @media (max-width: $vp-mobile) {
+    min-height: 491px;
+    background-image: url("../img/intro-bg-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-bg-mobile@2x.webp");
+    }
+  }
 }
 
 .header .container {

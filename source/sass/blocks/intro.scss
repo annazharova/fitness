@@ -19,9 +19,12 @@
   grid-template-rows: 160px 120px 1fr 60px;
 
   @media (max-width: $vp-tablet) {
-    display: grid;
     grid-template-columns: 1fr 190px;
     grid-template-rows: 120px 82px 1fr 60px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    grid-template-columns: 1fr 175px;
   }
 }
 
@@ -72,6 +75,10 @@
   @media (max-width: $vp-tablet) {
   font-size: 86px;
   }
+
+  @media (max-width: $vp-mobile) {
+  font-size: 78px;
+  }
 }
 
 .intro a {
@@ -99,5 +106,9 @@
 
   @media (max-width: $vp-tablet) {
     width: 183px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: 290px;
   }
 }

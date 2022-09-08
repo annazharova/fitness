@@ -6,6 +6,11 @@
     margin-top: 100px;
     margin-bottom: 100px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 }
 
 .gym .lead {
@@ -25,12 +30,21 @@
   grid-template-columns: 355px 1fr 1fr;
   column-gap: 30px;
   min-height: 516px;
+
+  @media (max-width: $vp-mobile) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .gym__img {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
   justify-self: flex-end;
+
+  @media (max-width: $vp-mobile) {
+    order: 2;
+  }
 }
 
 .gym__video {
@@ -38,4 +52,20 @@
   grid-row: 1 / 2;
   align-self: flex-end;
   z-index: 1;
+
+  @media (max-width: $vp-mobile) {
+    order: 3;
+  }
+}
+
+.gym__description {
+  @media (max-width: $vp-mobile) {
+    order: 1;
+  }
+}
+
+.gym__description p:last-child {
+  @media (max-width: $vp-mobile) {
+    display: none;
+  }
 }

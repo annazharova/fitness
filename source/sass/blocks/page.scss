@@ -20,4 +20,9 @@
     font-size: 42px;
     line-height: 42px;
   }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }

@@ -17,6 +17,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .membership h2 {
@@ -60,6 +65,12 @@
     width: 442px;
     margin: 0 auto;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding: 55px 42px;
+    width: 290px;
+    height: 384px;
+  }
 }
 
 .membership__tile h4 {
@@ -67,6 +78,11 @@
   font-size: 26px;
   line-height: 29px;
   margin: 0;
+
+  @media (max-width: $vp-mobile) {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .membership__tile .button {
@@ -88,6 +104,10 @@
   line-height: 100%;
   color: $color-blue;
   z-index: 1;
+
+  @media (max-width: $vp-mobile) {
+    font-size: 48px;
+  }
 }
 
 .membership__tile .price-shadow {
@@ -98,6 +118,18 @@
   font-size: 100px;
   margin-top: 59px;
   margin-bottom: -80px;
+
+  @media (max-width: $vp-mobile) {
+    font-size: 80px;
+    margin-bottom: -75px;
+  }
+}
+
+.membership__tile .price__img {
+  @media (max-width: $vp-mobile) {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .tabs {
@@ -132,6 +164,10 @@
   cursor: pointer;
   position: relative;
   top: 1px;
+
+  @media (max-width: $vp-mobile) {
+    margin: 0 9px;
+  }
 }
 
 .tabs>label:not(:first-of-type) {
