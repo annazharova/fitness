@@ -92,24 +92,22 @@ window.addEventListener('DOMContentLoaded', () => {
 //   })
 // }
 
-let slidesPerView;
-let spaceBetween;
-
-if (window.outerWidth > 1199) {
-  slidesPerView = 4;
-  spaceBetween = 30;
-} else if (window.outerWidth < 767) {
-  slidesPerView = 1;
-  spaceBetween = 30;
-} else {
-  slidesPerView = 2;
-  spaceBetween = 40;
-}
-
 const trainersSwiper = new Swiper(".trainers-swiper", {
-  slidesPerView: slidesPerView,
-  spaceBetween: 0,
   slidesPerGroup: 1,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
+  },
   direction: 'horizontal',
   loop: true,
   loopFillGroupWithBlank: true,
