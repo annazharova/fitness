@@ -64,12 +64,12 @@
 .membership__tile {
   background-color: $color-white;
   width: 360px;
-  height: 448px;
-  padding: 68px 77px;
+  min-height: 448px;
+  justify-content: flex-start;
+  padding: 61px 77px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
 
   @media (max-width: $vp-tablet) {
     width: 442px;
@@ -81,6 +81,10 @@
     width: 290px;
     height: 384px;
   }
+}
+
+.membership__tile p {
+  margin-top: 10px;
 }
 
 .membership__tile h4 {
@@ -97,7 +101,7 @@
 
 .membership__tile .button {
   width: 206px;
-  height: 64px;
+  height: 66px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,6 +110,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: 0.05em;
 }
 
 .membership__tile .price {
@@ -114,6 +119,8 @@
   line-height: 100%;
   color: $color-blue;
   z-index: 1;
+  margin-top: 60px;
+  margin-bottom: 50px;
 
   @media (max-width: $vp-mobile) {
     font-size: 48px;
@@ -142,52 +149,6 @@
   }
 }
 
-.tabs {
-  text-align: center;
-}
-
-.tabs>input[type="radio"] {
-  display: none;
-}
-
 .membership__tabs {
   display: none;
-}
-
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
-#tab-btn-1:checked~#content-1,
-#tab-btn-2:checked~#content-2,
-#tab-btn-3:checked~#content-3 {
-  display: block;
-}
-
-.tabs>label {
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  user-select: none;
-  padding: 15px 5px;
-  margin: 0 15px;
-  font-size: 16px;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
-  cursor: pointer;
-  position: relative;
-  top: 1px;
-
-  @media (max-width: $vp-mobile) {
-    margin: 0 9px;
-  }
-}
-
-.tabs>label:not(:first-of-type) {
-  border-left: none;
-}
-
-.tabs>input[type="radio"]+label {
-  border-bottom: 2px solid #78787833;
-}
-
-.tabs>input[type="radio"]:checked+label {
-  border-bottom: 2px solid #D10A42;
 }

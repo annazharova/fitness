@@ -43,6 +43,7 @@
 
 .header .logo__img {
   fill: $color-white;
+  margin-top: 30px;
 
   @media (max-width: $vp-tablet) {
     width: 82px;

@@ -6,3 +6,17 @@
     display: none;
   }
 }
+
+.social__list {
+  display: grid;
+  row-gap: 9px;
+  padding-bottom: 40px;
+  justify-items: right;
+}
+
+.social__item a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
