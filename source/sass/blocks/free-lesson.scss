@@ -18,6 +18,11 @@
     padding-right: 45px;
     padding-left: 133px;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .free-lesson h2 {

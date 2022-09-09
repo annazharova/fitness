@@ -6,6 +6,11 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
 }
 
 .promo h2 {
@@ -20,7 +25,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  // min-height: 462px;
+
+  @media (max-width: $vp-mobile) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .promo li {
@@ -29,6 +37,10 @@
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
   padding: 35px;
   color: $color-hover;
+
+  @media (max-width: $vp-mobile) {
+    text-align: center;
+  }
 }
 
 .promo h3 {
@@ -42,7 +54,6 @@
   background-color: $color-red;
   color: $color-white;
   border: none;
-
   background-image: url("../img/promo-photo.webp");
   background-repeat: no-repeat;
   background-size: 50%;
@@ -62,6 +73,19 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-photo-tablet@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-mobile) {
+    grid-column: unset;
+    min-height: 598px;
+    background-image: url("../img/promo-photo-mobile.webp");
+    background-size: 100%;
+    background-position-y: bottom;
+    background-position-x: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-photo-mobile@2x.webp");
     }
   }
 }

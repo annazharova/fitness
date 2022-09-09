@@ -8,6 +8,11 @@
     padding-right: 45px;
     padding-left: 133px;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 .contacts__wrapper {
@@ -15,6 +20,11 @@
   grid-template-columns: 1fr 1fr;
   width: 404px;
   column-gap: 50px;
+
+  @media (max-width: $vp-mobile) {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
 }
 
 .contacts__wrapper h3 {
