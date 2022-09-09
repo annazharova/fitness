@@ -2137,6 +2137,9 @@ button,
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     min-width: 100%;
+    -webkit-column-gap: 70px;
+    -moz-column-gap: 70px;
+    column-gap: 70px;
   }
 
   .footer-social__list {
