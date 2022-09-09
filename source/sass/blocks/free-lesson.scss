@@ -65,4 +65,8 @@
   color: $color-white;
   margin-top: 30px;
   grid-column: 1 / -1;
+
+  @media (max-width: $vp-mobile) {
+    width: 100%;
+  }
 }

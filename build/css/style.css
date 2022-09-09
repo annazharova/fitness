@@ -1608,9 +1608,6 @@ button,
   list-style: none;
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-nav {
@@ -1860,6 +1857,10 @@ button,
     min-width: 535px;
   }
 
+  .footer-nav {
+    min-width: 100%;
+  }
+
   .footer-nav__list {
     min-width: 391px;
   }
@@ -1904,9 +1905,17 @@ button,
     background-image: url("../img/intro-bg-mobile.webp");
   }
 
+  .intro__wrapper {
+    width: 100%;
+  }
+
   .intro__text {
     -ms-grid-columns: 1fr 175px;
     grid-template-columns: 1fr 175px;
+  }
+
+  .intro__img {
+    display: none;
   }
 
   .intro h1 {
@@ -2099,6 +2108,10 @@ button,
     padding-left: 15px;
   }
 
+  .free-lesson .button {
+    width: 100%;
+  }
+
   .contacts {
     padding-right: 15px;
     padding-left: 15px;
@@ -2108,6 +2121,30 @@ button,
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     width: 100%;
+  }
+
+  .footer .container {
+    min-height: 260px;
+    display: -ms-grid;
+    display: grid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-nav__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    min-width: 100%;
+  }
+
+  .footer-social__list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 97px;
   }
 }
 

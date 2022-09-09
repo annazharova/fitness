@@ -11,6 +11,10 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
+
+  @media (max-width: $vp-mobile) {
+    width: 100%;
+  }
 }
 
 .intro__text {
@@ -56,6 +60,12 @@
   @media (max-width: $vp-tablet) {
     font-size: 14px;
     line-height: 150%;
+  }
+}
+
+.intro__img {
+  @media (max-width: $vp-mobile) {
+    display: none;
   }
 }
 

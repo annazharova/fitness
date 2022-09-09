@@ -6,6 +6,10 @@
   @media (max-width: $vp-tablet) {
     min-width: 535px;
   }
+
+  @media (max-width: $vp-tablet) {
+    min-width: 100%;
+  }
 }
 
 .footer-nav__list {
@@ -14,6 +18,12 @@
 
   @media (max-width: $vp-tablet) {
     min-width: 391px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 100%;
   }
 }
 
