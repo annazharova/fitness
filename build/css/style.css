@@ -845,13 +845,14 @@ button,
 .membership {
   padding-top: 120px;
   padding-bottom: 120px;
-  background-image: url("../img/plates.png");
   background-color: #f8f9fc;
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position-x: right;
-  background-position-y: bottom;
   min-height: 851px;
+  position: relative;
+}
+
+.membership .container {
+  z-index: 1;
+  position: relative;
 }
 
 .membership h2 {
@@ -881,7 +882,7 @@ button,
 .membership__tile {
   background-color: #ffffff;
   width: 360px;
-  min-height: 448px;
+  min-height: 445px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -953,6 +954,12 @@ button,
   display: none;
 }
 
+.membership__img {
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+}
+
 .tabs {
   text-align: center;
   margin-top: 17px;
@@ -1008,8 +1015,8 @@ button,
 .supergames {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 43.4% 57.3%;
-  grid-template-columns: 43.4% 57.3%;
+  -ms-grid-columns: 43% 57%;
+  grid-template-columns: 43% 57%;
   min-height: 500px;
   margin-top: 120px;
   margin-bottom: 120px;
@@ -1022,7 +1029,7 @@ button,
 
 .supergames .button {
   width: 343px;
-  height: 67px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,16 +1046,24 @@ button,
   align-items: center;
   border: 4px solid #ffffff;
   grid-column: 1 / -1;
+  letter-spacing: 0.05em;
+  -ms-grid-row-align: flex-end;
+  -ms-grid-column-align: flex-end;
+  place-self: flex-end;
 }
 
 .supergames__wrapper {
   background-color: #ed0233;
   color: #ffffff;
-  padding: 87px 78px;
+  padding: 83px 78px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 100px;
-  grid-template-columns: 1fr 100px;
+  -ms-grid-columns: 1fr 92px;
+  grid-template-columns: 1fr 92px;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content 1fr 1fr;
+  -ms-grid-rows: min-content min-content 1fr 1fr;
+  grid-template-rows: -webkit-min-content -webkit-min-content 1fr 1fr;
+  grid-template-rows: min-content min-content 1fr 1fr;
 }
 
 .supergames__wrapper h2 {
@@ -1056,6 +1071,7 @@ button,
   font-weight: 700;
   color: #ffffff;
   margin: 0;
+  margin-top: 5px;
   font-size: 90px;
   line-height: 90px;
   letter-spacing: 0.03em;
@@ -1068,7 +1084,41 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
+  row-gap: 10px;
   margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content 1fr;
+  -ms-grid-columns: min-content 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  height: 64px;
+}
+
+.supergames__date-title {
+  grid-column: 1 / -1;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.supergames__date-day {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  margin-right: 8px;
+}
+
+.supergames__date-month {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  margin-top: 4px;
+}
+
+.supergames__date-hour {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
 }
 
 .supergames__time {
@@ -1076,12 +1126,21 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content;
+  row-gap: 10px;
+  margin-top: 13px;
 }
 
 .supergames__description {
   font-size: 18px;
   line-height: 150%;
   grid-column: 1 / -1;
+  margin-top: 4px;
 }
 
 .supergames__wrapper a {
@@ -1093,11 +1152,10 @@ button,
 }
 
 .trainers h2 {
-  margin-bottom: 62px;
+  margin-bottom: 50px;
 }
 
 .trainers ul {
-  list-style: none;
   padding: 0;
 }
 
@@ -1154,9 +1212,9 @@ button,
 
 .trainers .swiper-button-next:after,
 .trainers .swiper-button-prev:after {
-  color: #AFAFAF;
+  color: #afafaf;
   width: 16px;
-  height: 32px;
+  height: 45px;
 }
 
 .trainer {
@@ -1170,24 +1228,30 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
-  width: 264px;
+  width: 260px;
 }
 
 .trainer:hover {
   background-color: #102654;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 79px -webkit-min-content 1fr;
+  -ms-grid-rows: 79px min-content 1fr;
+  grid-template-rows: 79px -webkit-min-content 1fr;
+  grid-template-rows: 79px min-content 1fr;
   text-align: center;
 }
 
-.trainer:hover p,
+.trainer:hover p {
+  display: block;
+  margin-top: -3px;
+}
+
 .trainer:hover ul {
   display: block;
+  padding-left: 70px;
+  padding-right: 45px;
+  margin-top: 10px;
 }
 
 .trainer:hover h3 {
@@ -1195,6 +1259,8 @@ button,
   -ms-grid-column-align: unset;
   place-self: unset;
   margin-bottom: 0;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 
 .trainer h3 {
@@ -1202,7 +1268,7 @@ button,
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   -ms-grid-row-align: flex-end;
   -ms-grid-column-align: flex-end;
   place-self: flex-end;
@@ -1219,14 +1285,16 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   display: none;
+  padding-left: 20px;
 }
 
-.trainer ul li::before {
-  content: "• ";
-  color: #ffffff;
-  font-weight: bold;
-  display: inline-block;
-  width: 6px;
+.trainer li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 9px;
 }
 
 .advantages {
@@ -1248,8 +1316,8 @@ button,
   -webkit-column-gap: 60px;
   -moz-column-gap: 60px;
   column-gap: 60px;
-  row-gap: 100px;
-  max-width: 1040px;
+  row-gap: 145px;
+  max-width: 1002px;
 }
 
 .advantages .quantity {
@@ -1271,21 +1339,23 @@ button,
 
 .advantages h2 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 67px;
 }
 
 .advantages h3 {
   font-weight: 700;
   font-size: 22px;
   line-height: 150%;
-  margin-bottom: 10px;
-  margin-top: 0;
+  margin-bottom: 3px;
+  margin-top: -4px;
 }
 
 .advantages .description {
+  margin-top: 4px;
   font-weight: 300;
   font-size: 16px;
   line-height: 140%;
+  letter-spacing: -0.01em;
 }
 
 .advantages__item {
@@ -1298,6 +1368,7 @@ button,
   -webkit-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+  margin-top: -2px;
 }
 
 .advantages__item p {
@@ -1320,14 +1391,13 @@ button,
   background-color: #1c3374;
   color: #ffffff;
   text-align: center;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  height: 307px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1337,11 +1407,13 @@ button,
 .advantages__central .quantity {
   font-weight: 700;
   font-size: 74px;
-  line-height: 150%;
+  line-height: 100%;
   color: #ffffff;
   background: transparent;
   -webkit-background-clip: unset;
   -webkit-text-fill-color: unset;
+  margin-top: 54px;
+  margin-left: -4px;
 }
 
 .advantages__central .measure {
@@ -1349,6 +1421,12 @@ button,
   font-size: 26px;
   line-height: 150%;
   color: #ffffff;
+  margin-top: 3px;
+}
+
+.advantages__central .description {
+  line-height: 150%;
+  margin-top: 31px;
 }
 
 .promo {
@@ -1357,7 +1435,7 @@ button,
 }
 
 .promo h2 {
-  padding-bottom: 62px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -1369,15 +1447,22 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 40px;
+  min-height: 462px;
 }
 
-.promo li {
+.promo .default {
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
-  padding: 35px;
+  padding: 25px;
   color: #1c3374;
+}
+
+.default p {
+  margin-top: 8px;
 }
 
 .promo h3 {
@@ -1398,6 +1483,7 @@ button,
   background-size: 50%;
   background-position-y: center;
   background-position-x: right;
+  padding: 35px;
 }
 
 .promo__link {
@@ -1409,10 +1495,20 @@ button,
   border-bottom: 1px solid #1c3374;
 }
 
+.default .promo__link {
+  margin-top: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .promo .duration {
   font-weight: 700;
   font-size: 28px;
-  margin-top: 45px;
+  margin-top: 8px;
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -1421,8 +1517,8 @@ button,
   font-weight: 700;
   font-size: 70px;
   margin-left: 10px;
-  margin-top: 30px;
-  margin-bottom: 45px;
+  margin-top: 27px;
+  margin-bottom: 42px;
 }
 
 .promo .description {
@@ -1437,6 +1533,17 @@ button,
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   margin-left: 10px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 190px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .reviews article {
@@ -1769,7 +1876,6 @@ button,
   .membership {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url("../img/plates-tablet.png");
   }
 
   .membership__tab {
@@ -1923,10 +2029,6 @@ button,
     background-image: url("../img/intro-bg-tablet@2x.webp");
   }
 
-  .membership {
-    background-image: url("../img/plates-tablet@2x.png");
-  }
-
   .supergames {
     background-image: url("../img/crossfit-photo-tablet@2x.webp");
   }
@@ -2013,7 +2115,6 @@ button,
   .membership {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-image: unset;
   }
 
   .membership__tile {
@@ -2114,7 +2215,7 @@ button,
     grid-template-columns: 1fr;
   }
 
-  .promo li {
+  .promo .default {
     text-align: center;
   }
 
@@ -2203,10 +2304,6 @@ button,
     background-image: url("../img/intro-bg-mobile@2x.webp");
   }
 
-  .membership {
-    background-image: unset;
-  }
-
   .supergames {
     background-image: url("../img/crossfit-photo-mobile@2x.webp");
   }
@@ -2220,10 +2317,6 @@ button,
   .header {
     background-image: url("../img/intro-bg@2x.webp");
     background-size: cover;
-  }
-
-  .membership {
-    background-image: url("../img/plates@2x.png");
   }
 
   .supergames {

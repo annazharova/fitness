@@ -14,7 +14,7 @@
 }
 
 .promo h2 {
-  padding-bottom: 62px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -24,23 +24,29 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 40px;
+  min-height: 462px;
 
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
   }
 }
 
-.promo li {
+.promo .default {
   border: 7px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
-  padding: 35px;
+  padding: 25px;
   color: $color-hover;
 
   @media (max-width: $vp-mobile) {
     text-align: center;
   }
+}
+
+.default p {
+  margin-top: 8px;
 }
 
 .promo h3 {
@@ -59,6 +65,7 @@
   background-size: 50%;
   background-position-y: center;
   background-position-x: right;
+  padding: 35px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/promo-photo@2x.webp");
@@ -99,10 +106,16 @@
   border-bottom: 1px solid $color-hover;
 }
 
+.default .promo__link {
+  margin-top: 72px;
+  display: flex;
+  width: fit-content;
+}
+
 .promo .duration {
   font-weight: 700;
   font-size: 28px;
-  margin-top: 45px;
+  margin-top: 8px;
   margin-left: 10px;
   margin-bottom: 20px;
 }
@@ -111,8 +124,8 @@
   font-weight: 700;
   font-size: 70px;
   margin-left: 10px;
-  margin-top: 30px;
-  margin-bottom: 45px;
+  margin-top: 27px;
+  margin-bottom: 42px;
 }
 
 .promo .description {
@@ -127,4 +140,11 @@
   color: $color-white;
   border-bottom: 1px solid $color-white;
   margin-left: 10px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 190px;
+  display: flex;
+  width: fit-content;
 }

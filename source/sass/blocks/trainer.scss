@@ -5,23 +5,31 @@
   display: flex;
   justify-content: center;
   height: 100%;
-  width: 264px;
+  width: 260px;
 
   &:hover {
     background-color: $color-black;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 79px min-content 1fr;
     text-align: center;
   }
 
-  &:hover p,
+  &:hover p {
+    display: block;
+    margin-top: -3px;
+  }
+
   &:hover ul {
     display: block;
+    padding-left: 70px;
+    padding-right: 45px;
+    margin-top: 10px;
   }
 
   &:hover h3 {
     place-self: unset;
     margin-bottom: 0;
+    align-self: flex-end;
   }
 }
 
@@ -30,7 +38,7 @@
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   place-self: flex-end;
 }
 
@@ -42,13 +50,22 @@
 .trainer ul {
   flex-direction: column;
   display: none;
+  padding-left: 20px;
 }
 
-.trainer ul li::before {
-  content: "• ";
-  color: #ffffff;
-  font-weight: bold;
-  display: inline-block;
-  width: 6px;
-  // margin-left: -1em;
+.trainer li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 9px;
 }
+
+// .trainer ul li::before {
+//   content: "• ";
+//   color: #ffffff;
+//   font-weight: bold;
+//   display: inline-block;
+//   width: 10px;
+// }

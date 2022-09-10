@@ -104,7 +104,7 @@ const trainersSwiper = new Swiper(".trainers-swiper", {
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 30
+      spaceBetween: 40
     }
   },
   slidesPerView: 'auto',

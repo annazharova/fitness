@@ -222,6 +222,16 @@
             </div>
           </div>
         </div>
+        <picture>
+          <!-- 1х: 308px; 2x: 616px -->
+          <source media="(min-width: 1200px)" type="image/webp" srcset="img/plates.webp 1x, img/plates@2x.webp 2x">
+          <!-- 1х: 347px; 2x: 694px -->
+          <source media="(min-width: 768px)" type="image/webp" srcset="img/plates-tablet.webp 1x, img/plates-tablet@2x.webp 2x">
+          <!-- 1х: 308px; 2x: 616px -->
+          <source media="(min-width: 1200px)" srcset="img/plates.png 1x, img/plates@2x.png 2x">
+          <!-- 1х: 347px; 2x: 694px -->
+          <img class="membership__img" src="img/plates-tablet.png" srcset="img/plates-tablet@2x.png 2x" width="287" height="331" alt="Блины для штанги">
+        </picture>
       </section>
       <div class="container">
         <section class="supergames">
@@ -229,14 +239,13 @@
             <h2>Super games</h2>
             <p class="supergames__description">Ежегодные соревнования по CrossFit</p>
             <p class="supergames__date">
-              <span>Дата</span>
-              <span>7</span>
-              <span>Марта</span>
-              <span>2019</span>
+              <span class="supergames__date-title">Дата</span>
+              <span class="supergames__date-day">7</span>
+              <span class="supergames__date-month">Марта 2019</span>
             </p>
             <p class="supergames__time">
-              <span>Время</span>
-              <span>12:00</span>
+              <span class="supergames__date-title">Время</span>
+              <span class="supergames__date-hour">12:00</span>
             </p>
             <a class="button" href="#">заполнить заявку</a>
           </div>
@@ -517,12 +526,12 @@
               <p class="description">Безлимитный абонемент в тренажерный зал</p>
               <a class="promo__link" href="#">подробнее</a>
             </li>
-            <li>
+            <li class="default">
               <h3>Месяц бесплатно</h3>
               <p>Приведи друга, получи абонемент в подарок</p>
               <a class="promo__link" href="#">подробнее</a>
             </li>
-            <li>
+            <li class="default">
               <h3>Скидка 20%</h3>
               <p>Корпоративный фитнес с командой</p>
               <a class="promo__link" href="#">подробнее</a>
