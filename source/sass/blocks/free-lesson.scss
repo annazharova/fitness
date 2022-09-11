@@ -5,7 +5,6 @@
   background-color: $color-black;
   color: $color-white;
   padding-top: 70px;
-  padding-bottom: 70px;
 
   @media (max-width: $vp-tablet) {
     justify-content: unset;
@@ -27,7 +26,7 @@
 
 .free-lesson h2 {
   color: $color-white;
-  padding-bottom: 58px;
+  padding-bottom: 39px;
 }
 
 .free-lesson form {
@@ -41,6 +40,9 @@
   border-bottom: 1px solid #74819c;
   background-color: transparent;
   width: 100%;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .free-lesson input::placeholder {

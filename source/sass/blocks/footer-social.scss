@@ -1,7 +1,16 @@
 .footer-social__list {
+  display: flex;
+
   @media (max-width: $vp-mobile) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 97px;
   }
+}
+
+.footer-social__link {
+  display: flex;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
 }

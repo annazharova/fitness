@@ -1,7 +1,6 @@
 .footer-nav {
-  display: flex;
-  min-width: 770px;
-  justify-content: space-between;
+  margin-top: 10px;
+  width: 796px;
 
   @media (max-width: $vp-tablet) {
     min-width: 535px;
@@ -13,8 +12,9 @@
 }
 
 .footer-nav__list {
-  min-width: 431px;
   justify-content: space-between;
+  display: flex;
+  min-width: 770px;
 
   @media (max-width: $vp-tablet) {
     min-width: 391px;
@@ -28,11 +28,10 @@
   }
 }
 
-.footer-social__link {
-  display: flex;
-  height: 35px;
-  width: 35px;
-  padding: 5px;
+.footer-nav__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .footer-nav__img {

@@ -1571,7 +1571,7 @@ button,
 }
 
 .reviews h2 {
-  padding-bottom: 62px;
+  padding-bottom: 50px;
   text-align: center;
 }
 
@@ -1579,13 +1579,16 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
-  margin-top: 0;
+  margin-top: -6px;
+  letter-spacing: 0.03em;
 }
 
 .reviews p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
+  line-height: 140%;
+  margin-top: 3px;
 }
 
 .reviews .swiper {
@@ -1597,7 +1600,7 @@ button,
 .reviews .swiper-button-prev:after {
   color: #AFAFAF;
   width: 16px;
-  height: 32px;
+  height: 50px;
 }
 
 .bottom {
@@ -1605,7 +1608,8 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin-top: 120px;
+  margin-top: 119px;
+  min-height: 337px;
 }
 
 .free-lesson {
@@ -1619,12 +1623,11 @@ button,
   background-color: #102654;
   color: #ffffff;
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 
 .free-lesson h2 {
   color: #ffffff;
-  padding-bottom: 58px;
+  padding-bottom: 39px;
 }
 
 .free-lesson form {
@@ -1642,6 +1645,9 @@ button,
   border-bottom: 1px solid #74819c;
   background-color: transparent;
   width: 100%;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .free-lesson input::-webkit-input-placeholder {
@@ -1706,7 +1712,6 @@ button,
   padding-left: 120px;
   border-top: 1px solid #74819c;
   padding-top: 70px;
-  padding-bottom: 70px;
 }
 
 .contacts__wrapper {
@@ -1714,22 +1719,30 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  width: 404px;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
+  width: 460px;
+  -webkit-column-gap: 120px;
+  -moz-column-gap: 120px;
+  column-gap: 120px;
+  margin-left: 2px;
+}
+
+.contacts h2 {
+  margin-bottom: 22px;
 }
 
 .contacts__wrapper h3 {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
+  margin-bottom: 0;
 }
 
 .contacts__wrapper p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  margin-top: 3px;
+  margin-bottom: 2px;
 }
 
 .footer {
@@ -1756,6 +1769,7 @@ button,
 
 .footer .logo {
   fill: #ffffff;
+  margin-right: 235px;
 }
 
 .footer ul {
@@ -1765,20 +1779,30 @@ button,
 }
 
 .footer-nav {
+  margin-top: 10px;
+  width: 796px;
+}
+
+.footer-nav__list {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-width: 770px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
-.footer-nav__list {
-  min-width: 431px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+.footer-nav__item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-social__link {
