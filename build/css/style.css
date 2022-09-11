@@ -729,14 +729,17 @@ button,
   letter-spacing: 0.03em;
   margin: 0;
   text-transform: uppercase;
-  font-size: 109px;
-  line-height: 100%;
   text-align: right;
-  margin-top: 5px;
+  margin-top: 7px;
+  margin-right: 2px;
   grid-column: 1 / -1;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2 / 4;
+  letter-spacing: .015em;
+  font-size: 112px;
+  font-weight: 700;
+  line-height: 97%;
 }
 
 .intro a {
