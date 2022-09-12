@@ -1,37 +1,18 @@
 .membership {
   padding-top: 120px;
   padding-bottom: 120px;
-  // background-image: url("../img/plates.png");
   background-color: $color-grey;
-  // background-repeat: no-repeat;
-  // background-size: 20%;
-  // background-position-x: right;
-  // background-position-y: bottom;
   min-height: 851px;
   position: relative;
-
-  @media (min-resolution: 2dppx) {
-    // background-image: url("../img/plates@2x.png");
-  }
 
   @media (max-width: $vp-tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
-    // background-image: url("../img/plates-tablet.png");
-
-    @media (min-resolution: 2dppx) {
-      // background-image: url("../img/plates-tablet@2x.png");
-    }
   }
 
   @media (max-width: $vp-mobile) {
     padding-top: 70px;
     padding-bottom: 70px;
-    // background-image: unset;
-
-    @media (min-resolution: 2dppx) {
-      // background-image: unset;
-    }
   }
 }
 
@@ -42,6 +23,15 @@
 
 .membership h2 {
   text-align: center;
+}
+
+.membership h2::before {
+  content: '';
+  position: absolute;
+  top: 124px;
+  left: 411px;
+  width: 341px;
+  border-top: 2px solid #78787833;
 }
 
 .membership__item h3 {
@@ -69,10 +59,11 @@
 
 .membership__tile {
   background-color: $color-white;
+  border: 7px solid transparent;
   width: 360px;
   min-height: 445px;
   justify-content: flex-start;
-  padding: 61px 77px;
+  padding: 61px 70px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -86,6 +77,12 @@
     padding: 55px 42px;
     width: 290px;
     height: 384px;
+  }
+
+  &:hover {
+    border: 7px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
   }
 }
 
@@ -117,6 +114,12 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
+
+  &:hover {
+    border: none;
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: $color-white;
+  }
 }
 
 .membership__tile .price {

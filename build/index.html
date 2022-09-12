@@ -70,7 +70,10 @@
             <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
             <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
           </div>
-          <iframe class="gym__video" width="364" height="228" src="https://www.youtube.com/watch?v=9TZXsZItgdw"></iframe>
+          <div class="gym__video video_wrapper js-videoWrapper">
+           <iframe class="videoIframe js-videoIframe" src="" frameborder="0" allowTransparency="true" allowfullscreen data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white"></iframe>
+           <button class="videoPoster js-videoPoster"></button>
+          </div>
           <picture class="gym__img">
             <!-- 1х: 660px; 2x: 1320px -->
             <source media="(min-width: 1200px)" type="image/webp" srcset="img/gym-photo.webp 1x, img/gym-photo@2x.webp 2x">
@@ -679,6 +682,7 @@
         </section>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

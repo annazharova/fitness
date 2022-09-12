@@ -112,6 +112,16 @@
   font-size: 40px;
   line-height: 100%;
   margin-right: 8px;
+  position: relative;
+}
+
+.supergames__date-day::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 64px;
+  border-top: 1px solid $color-white;
 }
 
 .supergames__date-month {
@@ -125,6 +135,16 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 100%;
+  position: relative;
+}
+
+.supergames__date-hour::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 88px;
+  border-top: 1px solid $color-white;
 }
 
 .supergames__time {

@@ -29,6 +29,16 @@
 
 .contacts h2 {
   margin-bottom: 22px;
+  position: relative;
+}
+
+.contacts h2::before {
+  content: '';
+  position: absolute;
+  top: 94px;
+  left: 233px;
+  height: 102px;
+  border-left: 1px solid #74819C;
 }
 
 .contacts__wrapper h3 {

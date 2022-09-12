@@ -53,6 +53,7 @@
 }
 
 .free-lesson .button {
+  cursor: pointer;
   width: 410px;
   height: 52px;
   border: 3px solid $color-white;
@@ -67,6 +68,15 @@
   color: $color-white;
   margin-top: 30px;
   grid-column: 1 / -1;
+
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
 
   @media (max-width: $vp-mobile) {
     width: 100%;

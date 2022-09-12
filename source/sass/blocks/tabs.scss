@@ -7,7 +7,6 @@ margin-top: 17px;
 display: none;
 }
 
-/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
 #tab-btn-1:checked~#content-1,
 #tab-btn-2:checked~#content-2,
 #tab-btn-3:checked~#content-3 {
@@ -38,7 +37,7 @@ display: none;
 }
 
 .tabs>input[type="radio"]+label {
-  border-bottom: 2px solid #78787833;
+  border-bottom: 2px solid transparent;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
