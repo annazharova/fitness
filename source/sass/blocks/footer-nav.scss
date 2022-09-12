@@ -34,6 +34,18 @@
   line-height: 16px;
 }
 
+.footer-nav__item a {
+
+  &:hover,
+  &:focus {
+    background-color: $color-blue;
+  }
+
+  &:active {
+    background-color: $color-active;
+  }
+}
+
 .footer-nav__img {
   @media (max-width: $vp-tablet) {
     width: 82px;

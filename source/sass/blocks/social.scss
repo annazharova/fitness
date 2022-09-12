@@ -19,4 +19,15 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  padding: 5px;
+  margin-right: -5px;
+
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+
+  &:active {
+    color: $color-active;
+  }
 }

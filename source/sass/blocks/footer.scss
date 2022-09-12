@@ -19,6 +19,7 @@
 
 .footer a {
   color: $color-white;
+  padding: 5px;
 
   @media (max-width: $vp-tablet) {
     font-size: 14px;
@@ -29,6 +30,15 @@
 .footer .logo {
   fill: $color-white;
   margin-right: 235px;
+
+  &:hover,
+  &:focus {
+    fill: $color-blue;
+  }
+
+  &:active {
+    fill: $color-active;
+  }
 }
 
 .footer ul {

@@ -645,6 +645,17 @@ button,
   margin-top: 30px;
 }
 
+.header .logo__img:hover,
+.header .logo__img:focus {
+  background-color: unset;
+  fill: #103aae;
+}
+
+.header .logo__img:active {
+  background-color: unset;
+  fill: #b80027;
+}
+
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -667,6 +678,17 @@ button,
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
+  padding: 5px;
+  margin-right: -5px;
+}
+
+.social__item a:hover,
+.social__item a:focus {
+  color: #1c3374;
+}
+
+.social__item a:active {
+  color: #b80027;
 }
 
 .intro {
@@ -771,6 +793,17 @@ button,
   -ms-grid-row-align: self-end;
   -ms-grid-column-align: self-end;
   place-self: self-end;
+}
+
+.intro .button:hover,
+.intro .button:focus {
+  background-color: #1c3374;
+  border: 4px solid #1c3374;
+}
+
+.intro .button:active {
+  background-color: #b80027;
+  border: 4px solid #b80027;
 }
 
 .phone {
@@ -1089,6 +1122,15 @@ button,
   top: 1px;
 }
 
+.tabs > label:hover,
+.tabs > label:focus {
+  color: #1c3374;
+}
+
+.tabs > label:active {
+  color: #b80027;
+}
+
 .tabs > label:not(:first-of-type) {
   border-left: none;
 }
@@ -1142,6 +1184,17 @@ button,
   -ms-grid-row-align: flex-end;
   -ms-grid-column-align: flex-end;
   place-self: flex-end;
+}
+
+.supergames .button:hover,
+.supergames .button:focus {
+  background-color: #1c3374;
+  border: 4px solid #1c3374;
+}
+
+.supergames .button:active {
+  background-color: #b80027;
+  border: 4px solid #b80027;
 }
 
 .supergames__wrapper {
@@ -1636,6 +1689,17 @@ button,
   width: fit-content;
 }
 
+.default .promo__link:hover,
+.default .promo__link:focus {
+  color: #1c3374;
+  border-bottom: 1px solid #1c3374;
+}
+
+.default .promo__link:active {
+  color: #b80027;
+  border-bottom: 1px solid #b80027;
+}
+
 .promo .duration {
   font-weight: 700;
   font-size: 28px;
@@ -1675,6 +1739,17 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.hot .promo__link:hover,
+.hot .promo__link:focus {
+  color: #1c3374;
+  border-bottom: 1px solid #1c3374;
+}
+
+.hot .promo__link:active {
+  color: #b80027;
+  border-bottom: 1px solid #b80027;
 }
 
 .reviews article {
@@ -1843,10 +1918,12 @@ button,
 .free-lesson .button:hover,
 .free-lesson .button:focus {
   background-color: #1c3374;
+  border: 3px solid #1c3374;
 }
 
 .free-lesson .button:active {
   background-color: #b80027;
+  border: 3px solid #1c3374;
 }
 
 .contacts {
@@ -1916,11 +1993,21 @@ button,
 
 .footer a {
   color: #ffffff;
+  padding: 5px;
 }
 
 .footer .logo {
   fill: #ffffff;
   margin-right: 235px;
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  fill: #103aae;
+}
+
+.footer .logo:active {
+  fill: #b80027;
 }
 
 .footer ul {
@@ -1950,6 +2037,15 @@ button,
   line-height: 16px;
 }
 
+.footer-nav__item a:hover,
+.footer-nav__item a:focus {
+  background-color: #103aae;
+}
+
+.footer-nav__item a:active {
+  background-color: #b80027;
+}
+
 .footer-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1963,6 +2059,15 @@ button,
   height: 35px;
   width: 35px;
   padding: 5px;
+}
+
+.footer-social__link:hover .footer-social__img,
+.footer-social__link:focus .footer-social__img {
+  opacity: 50%;
+}
+
+.footer-social__link:active .footer-social__img {
+  opacity: 20%;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

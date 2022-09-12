@@ -72,10 +72,12 @@
   &:hover,
   &:focus {
     background-color: $color-hover;
+    border: 3px solid $color-hover;
   }
 
   &:active {
     background-color: $color-active;
+    border: 3px solid $color-hover;
   }
 
   @media (max-width: $vp-mobile) {

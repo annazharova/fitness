@@ -13,4 +13,13 @@
   height: 35px;
   width: 35px;
   padding: 5px;
+
+  &:hover .footer-social__img,
+  &:focus .footer-social__img {
+    opacity: 50%;
+  }
+
+  &:active .footer-social__img {
+    opacity: 20%;
+  }
 }

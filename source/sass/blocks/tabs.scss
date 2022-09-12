@@ -27,6 +27,15 @@ display: none;
   position: relative;
   top: 1px;
 
+  &:hover,
+  &:focus {
+    color: $color-hover;
+  }
+
+  &:active {
+    color: $color-active;
+  }
+
   @media (max-width: $vp-mobile) {
     margin: 0 9px;
   }

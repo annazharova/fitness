@@ -58,6 +58,17 @@
   letter-spacing: 0.05em;
   place-self: flex-end;
 
+  &:hover,
+  &:focus {
+    background-color: $color-hover;
+    border: 4px solid $color-hover;
+  }
+
+  &:active {
+    background-color: $color-active;
+    border: 4px solid $color-active;
+  }
+
   @media (max-width: $vp-tablet) {
     width: 202px;
     height: 39px;
