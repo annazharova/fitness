@@ -760,6 +760,13 @@ button,
   font-size: 112px;
   font-weight: 700;
   line-height: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+  justify-self: flex-end;
 }
 
 .intro a {
@@ -968,7 +975,10 @@ button,
   content: '';
   position: absolute;
   top: 124px;
-  left: 411px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 341px;
   border-top: 2px solid #78787833;
 }
@@ -2128,6 +2138,7 @@ button,
     -moz-column-gap: 30px;
     column-gap: 30px;
     margin-top: 5px;
+    margin-bottom: 50px;
   }
 
   .intro__text {
@@ -2232,7 +2243,6 @@ button,
 
   .membership h2::before {
     top: 107px;
-    left: 215px;
     width: 332px;
   }
 
@@ -2277,7 +2287,7 @@ button,
   }
 
   .supergames .button {
-    width: 202px;
+    width: 100%;
     height: 39px;
     font-size: 10px;
     line-height: 12px;

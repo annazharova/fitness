@@ -12,6 +12,7 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     margin-top: 5px;
+    margin-bottom: 50px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -89,6 +90,9 @@
   font-size: 112px;
   font-weight: 700;
   line-height: 97%;
+  display: flex;
+  max-width: min-content;
+  justify-self: flex-end;
 
   @media (max-width: $vp-tablet) {
     margin: 5px 0 0;
