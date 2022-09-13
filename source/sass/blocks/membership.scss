@@ -32,6 +32,12 @@
   left: 411px;
   width: 341px;
   border-top: 2px solid #78787833;
+
+  @media (max-width: $vp-tablet) {
+    top: 107px;
+    left: 215px;
+    width: 332px;
+  }
 }
 
 .membership__item h3 {
@@ -166,4 +172,9 @@
   position: absolute;
   right: 0;
   bottom: -70px;
+
+  @media (max-width: $vp-tablet) {
+    bottom: -53px;
+    width: 308px;
+  }
 }

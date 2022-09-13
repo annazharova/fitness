@@ -4,9 +4,10 @@
 
   @media (max-width: $vp-tablet) {
     min-width: 535px;
+    margin-right: 45px;
   }
 
-  @media (max-width: $vp-tablet) {
+  @media (max-width: $vp-mobile) {
     min-width: 100%;
   }
 }
@@ -17,7 +18,7 @@
   min-width: 770px;
 
   @media (max-width: $vp-tablet) {
-    min-width: 391px;
+    min-width: 535px;
   }
 
   @media (max-width: $vp-mobile) {

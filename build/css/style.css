@@ -921,6 +921,7 @@ button,
 .videoPoster:before {
   background-image: url("../img/video-button.png");
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100px;
   height: 100px;
   margin: -50px 0 0 -50px;
@@ -1259,7 +1260,7 @@ button,
   position: absolute;
   top: -4px;
   left: 0;
-  width: 64px;
+  width: 42px;
   border-top: 1px solid #ffffff;
 }
 
@@ -1282,7 +1283,7 @@ button,
   position: absolute;
   top: -4px;
   left: 0;
-  width: 88px;
+  width: 56px;
   border-top: 1px solid #ffffff;
 }
 
@@ -1373,6 +1374,16 @@ button,
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.trainers .swiper-button-next {
+  right: 45px;
+  left: auto;
+}
+
+.trainers .swiper-button-prev {
+  left: 45px;
+  right: auto;
 }
 
 .trainers .swiper-button-next:after,
@@ -2103,7 +2114,7 @@ button,
 
   .header .logo__img {
     width: 82px;
-    height: 17px;
+    height: 39px;
   }
 
   .social {
@@ -2116,13 +2127,14 @@ button,
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
+    margin-top: 5px;
   }
 
   .intro__text {
     -ms-grid-columns: 1fr 190px;
     grid-template-columns: 1fr 190px;
-    -ms-grid-rows: 120px 82px 1fr 60px;
-    grid-template-rows: 120px 82px 1fr 60px;
+    -ms-grid-rows: 95px 82px 1fr 60px;
+    grid-template-rows: 95px 82px 1fr 60px;
   }
 
   .intro__text p {
@@ -2136,16 +2148,25 @@ button,
   }
 
   .intro h1 {
-    font-size: 86px;
+    margin: 5px 0 0;
+    letter-spacing: .02em;
+    font-size: 88px;
+  }
+
+  .intro ul {
+    margin-top: 10px;
+    margin-right: 20px;
   }
 
   .intro .button {
     width: 183px;
+    margin-bottom: 20px;
   }
 
   .phone {
     font-size: 24px;
     line-height: 24px;
+    letter-spacing: .03em;
   }
 
   .gym {
@@ -2153,9 +2174,66 @@ button,
     margin-bottom: 100px;
   }
 
+  .gym .lead {
+    margin-bottom: 35px;
+  }
+
+  .gym .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .gym__img {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+  }
+
+  .gym__video {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    margin: -85px auto 0;
+    width: 266px;
+    height: 167px;
+  }
+
+  .gym__description {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    text-align: center;
+    width: 502px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .gym__description p:last-child {
+    display: none;
+  }
+
+  .videoPoster:before {
+    background-image: url("../img/video-button-tablet.png");
+    width: 73px;
+    height: 73px;
+    margin: -36px 0 0 -36px;
+  }
+
   .membership {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .membership h2::before {
+    top: 107px;
+    left: 215px;
+    width: 332px;
   }
 
   .membership__tab {
@@ -2172,6 +2250,23 @@ button,
   .membership__tile {
     width: 442px;
     margin: 0 auto;
+  }
+
+  .membership__img {
+    bottom: -53px;
+    width: 308px;
+  }
+
+  .tabs {
+    margin-top: 10px;
+  }
+
+  .tabs > label {
+    margin: 0 25px;
+  }
+
+  .tabs > input[type="radio"] + label {
+    font-size: 18px;
   }
 
   .supergames {
@@ -2191,14 +2286,75 @@ button,
 
   .supergames__wrapper {
     padding: 51px 45px;
+    -ms-grid-columns: 1fr 55px;
+    grid-template-columns: 1fr 55px;
+  }
+
+  .supergames__wrapper h2 {
+    font-size: 52px;
+    line-height: 100%;
+    margin-top: -1px;
+  }
+
+  .supergames__date {
+    row-gap: 2px;
+    margin: 0;
+    height: auto;
+    margin-top: -8px;
+  }
+
+  .supergames__date-title {
+    font-size: 12px;
+  }
+
+  .supergames__date-day {
+    font-size: 24px;
+    margin-right: 4px;
+  }
+
+  .supergames__date-month {
+    font-size: 10px;
+    margin-top: 0px;
+  }
+
+  .supergames__date-hour {
+    font-size: 24px;
+  }
+
+  .supergames__time {
+    margin: 0;
+    row-gap: 2px;
   }
 
   .supergames__description {
     font-size: 12px;
+    margin-top: 0;
   }
 
   .trainers {
     margin-bottom: 100px;
+  }
+
+  .trainers h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .trainers__img {
+    width: 268px;
+  }
+
+  .swiper-slide {
+    width: 268px;
+    margin-right: 30px;
+  }
+
+  .trainers .swiper-wrapper {
+    max-width: 566px;
+  }
+
+  .trainer {
+    width: 268px;
   }
 
   .advantages {
@@ -2212,25 +2368,34 @@ button,
     -ms-grid-rows: 1fr 239px 1fr;
     grid-template-rows: 1fr 239px 1fr;
     min-height: 463px;
-    -webkit-column-gap: 60px;
-    -moz-column-gap: 60px;
-    column-gap: 60px;
-    row-gap: 50px;
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
+    row-gap: 42px;
   }
 
   .advantages .quantity {
     font-size: 58px;
+    margin-top: 3px;
+  }
+
+  .advantages h2 {
+    margin-bottom: 49px;
   }
 
   .advantages h3 {
     font-size: 20px;
   }
 
+  .advantages .description {
+    margin-top: -3px;
+  }
+
   .advantages__item p {
-    -ms-grid-rows: 45px -webkit-min-content;
-    -ms-grid-rows: 45px min-content;
-    grid-template-rows: 45px -webkit-min-content;
-    grid-template-rows: 45px min-content;
+    -ms-grid-rows: 50px -webkit-min-content;
+    -ms-grid-rows: 50px min-content;
+    grid-template-rows: 50px -webkit-min-content;
+    grid-template-rows: 50px min-content;
   }
 
   .advantages__central {
@@ -2241,7 +2406,31 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     width: 442px;
+    height: auto;
     margin: 0 auto;
+  }
+
+  .advantages__central::before {
+    content: none;
+  }
+
+  .advantages__central::after {
+    content: none;
+  }
+
+  .advantages__central .quantity {
+    font-size: 74px;
+    margin-top: 32px;
+  }
+
+  .advantages__central .measure {
+    font-size: 22px;
+    margin-top: 0;
+  }
+
+  .advantages__central .description {
+    margin-top: 12px;
+    width: 186px;
   }
 
   .promo {
@@ -2249,9 +2438,34 @@ button,
     padding-bottom: 100px;
   }
 
+  .promo h2 {
+    padding-bottom: 40px;
+  }
+
+  .promo ul {
+    -ms-grid-rows: 1fr -webkit-min-content;
+    -ms-grid-rows: 1fr min-content;
+    grid-template-rows: 1fr -webkit-min-content;
+    grid-template-rows: 1fr min-content;
+    gap: 30px;
+  }
+
+  .promo .default {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-height: 211px;
+  }
+
   .promo .hot {
     background-image: url("../img/promo-photo-tablet.webp");
-    background-size: 59%;
+    background-size: contain;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
@@ -2259,9 +2473,29 @@ button,
     min-height: 462px;
   }
 
+  .default .promo__link {
+    -webkit-margin-before: auto;
+    margin-block-start: auto;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+  }
+
+  .reviews article {
+    width: 566px;
+  }
+
+  .reviews h2 {
+    padding-bottom: 40px;
+  }
+
+  .reviews .swiper-slide {
+    margin: auto;
+  }
+
   .bottom {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    margin-top: 100px;
   }
 
   .free-lesson {
@@ -2269,6 +2503,7 @@ button,
     -ms-flex-pack: unset;
     justify-content: unset;
     padding-right: 0;
+    min-height: 324px;
   }
 
   .free-lesson__wrapper {
@@ -2276,9 +2511,61 @@ button,
     padding-left: 133px;
   }
 
+  .free-lesson h2 {
+    padding-bottom: 33px;
+  }
+
+  .free-lesson form {
+    -webkit-column-gap: 60px;
+    -moz-column-gap: 60px;
+    column-gap: 60px;
+  }
+
+  .free-lesson .button {
+    width: 472px;
+    height: 54px;
+    margin-top: 28px;
+    padding-top: 3px;
+  }
+
   .contacts {
     padding-right: 45px;
     padding-left: 133px;
+    padding-bottom: 60px;
+  }
+
+  .contacts__wrapper {
+    margin-left: 0;
+    width: 100%;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+
+  .contacts h2 {
+    margin-bottom: 12px;
+  }
+
+  .contacts h2::before {
+    top: 80px;
+    left: 265px;
+    height: 129px;
+  }
+
+  .contacts__wrapper h3 {
+    font-size: 20px;
+    margin-top: 18px;
+  }
+
+  .contacts__wrapper p {
+    font-size: 18px;
+    line-height: 152.34%;
+    margin-top: 5px;
+  }
+
+  .footer .container {
+    min-height: 114px;
+    padding-right: 35px;
   }
 
   .footer a {
@@ -2286,16 +2573,18 @@ button,
     line-height: 16px;
   }
 
-  .footer-nav {
-    min-width: 535px;
+  .footer .logo {
+    margin-right: 35px;
+    margin-left: -7px;
   }
 
   .footer-nav {
-    min-width: 100%;
+    min-width: 535px;
+    margin-right: 45px;
   }
 
   .footer-nav__list {
-    min-width: 391px;
+    min-width: 535px;
   }
 
   .footer-nav__img {
@@ -2307,6 +2596,10 @@ button,
 @media (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1199px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1199px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/intro-bg-tablet@2x.webp");
+  }
+
+  .videoPoster:before {
+    background-image: url("../img/video-button-tablet@2x.png");
   }
 
   .supergames {
@@ -2358,38 +2651,6 @@ button,
   .gym {
     margin-top: 70px;
     margin-bottom: 70px;
-  }
-
-  .gym .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .gym__img {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
-    order: 2;
-  }
-
-  .gym__video {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-  }
-
-  .gym__description {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
-  }
-
-  .gym__description p:last-child {
-    display: none;
   }
 
   .membership {
@@ -2559,6 +2820,10 @@ button,
     padding-bottom: 20px;
   }
 
+  .footer-nav {
+    min-width: 100%;
+  }
+
   .footer-nav__list {
     display: -ms-grid;
     display: grid;
@@ -2601,6 +2866,10 @@ button,
 
   .videoPoster {
     background-image: url("../img/video-poster@2x.webp");
+  }
+
+  .videoPoster:before {
+    background-image: url("../img/video-button@2x.png");
   }
 
   .supergames {

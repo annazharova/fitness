@@ -9,6 +9,7 @@
   @media (max-width: $vp-tablet) {
     justify-content: unset;
     padding-right: 0;
+    min-height: 324px;
   }
 }
 
@@ -27,12 +28,20 @@
 .free-lesson h2 {
   color: $color-white;
   padding-bottom: 39px;
+
+  @media (max-width: $vp-tablet) {
+  padding-bottom: 33px;
+  }
 }
 
 .free-lesson form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
+
+  @media (max-width: $vp-tablet) {
+    column-gap: 60px;
+  }
 }
 
 .free-lesson input {
@@ -78,6 +87,13 @@
   &:active {
     background-color: $color-active;
     border: 3px solid $color-hover;
+  }
+
+  @media (max-width: $vp-tablet) {
+    width: 472px;
+    height: 54px;
+    margin-top: 28px;
+    padding-top: 3px;
   }
 
   @media (max-width: $vp-mobile) {

@@ -16,6 +16,10 @@
 .promo h2 {
   padding-bottom: 50px;
   text-align: center;
+
+  @media (max-width: $vp-tablet) {
+    padding-bottom: 40px;
+  }
 }
 
 .promo ul {
@@ -28,6 +32,11 @@
   gap: 40px;
   min-height: 462px;
 
+  @media (max-width: $vp-tablet) {
+    grid-template-rows: 1fr min-content;
+    gap: 30px;
+  }
+
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
   }
@@ -39,6 +48,14 @@
   border-image-source: linear-gradient(142.51deg, #D10A42, #00359F);
   padding: 25px;
   color: $color-hover;
+
+  @media (max-width: $vp-tablet) {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 211px;
+  }
 
   @media (max-width: $vp-mobile) {
     text-align: center;
@@ -73,7 +90,8 @@
 
   @media (max-width: $vp-tablet) {
     background-image: url("../img/promo-photo-tablet.webp");
-    background-size: 59%;
+    background-size: contain;
+    // background-size: 59%;
     grid-column: 1 / 3;
     grid-row: unset;
     min-height: 462px;
@@ -120,6 +138,12 @@
   &:active {
     color: $color-active;
     border-bottom: 1px solid $color-active;
+  }
+
+  @media (max-width: $vp-tablet) {
+    margin-block-start: auto;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
   }
 }
 

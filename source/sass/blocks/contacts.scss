@@ -6,6 +6,7 @@
   @media (max-width: $vp-tablet) {
     padding-right: 45px;
     padding-left: 133px;
+    padding-bottom: 60px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -21,6 +22,12 @@
   column-gap: 120px;
   margin-left: 2px;
 
+  @media (max-width: $vp-tablet) {
+    margin-left: 0;
+    width: 100%;
+    column-gap: 40px;
+  }
+
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
     width: 100%;
@@ -30,6 +37,10 @@
 .contacts h2 {
   margin-bottom: 22px;
   position: relative;
+
+  @media (max-width: $vp-tablet) {
+    margin-bottom: 12px;
+  }
 }
 
 .contacts h2::before {
@@ -39,6 +50,12 @@
   left: 233px;
   height: 102px;
   border-left: 1px solid #74819C;
+
+  @media (max-width: $vp-tablet) {
+    top: 80px;
+    left: 265px;
+    height: 129px;
+  }
 }
 
 .contacts__wrapper h3 {
@@ -46,6 +63,11 @@
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 0;
+
+  @media (max-width: $vp-tablet) {
+    font-size: 20px;
+    margin-top: 18px;
+  }
 }
 
 .contacts__wrapper p {
@@ -54,4 +76,10 @@
   line-height: 21px;
   margin-top: 3px;
   margin-bottom: 2px;
+
+  @media (max-width: $vp-tablet) {
+    font-size: 18px;
+    line-height: 152.34%;
+    margin-top: 5px;
+  }
 }

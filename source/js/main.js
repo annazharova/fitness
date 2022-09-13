@@ -100,7 +100,7 @@ const trainersSwiper = new Swiper(".trainers-swiper", {
     },
     768: {
       slidesPerView: 2,
-      spaceBetween: 40
+      spaceBetween: 30
     },
     1200: {
       slidesPerView: 4,
@@ -138,7 +138,7 @@ $(document).on('click','.js-videoPoster',function(e) {
   videoPlay(wrapper);
 });
 
-//вопроизводим видео, при этом скрывая постер
+//воcпроизводим видео, при этом скрывая постер
 function videoPlay(wrapper) {
   var iframe = wrapper.find('.js-videoIframe');
   // Берем ссылку видео из data

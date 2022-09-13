@@ -11,6 +11,7 @@
   @media (max-width: $vp-tablet) {
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
+    margin-top: 5px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -25,7 +26,7 @@
 
   @media (max-width: $vp-tablet) {
     grid-template-columns: 1fr 190px;
-    grid-template-rows: 120px 82px 1fr 60px;
+    grid-template-rows: 95px 82px 1fr 60px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -90,7 +91,9 @@
   line-height: 97%;
 
   @media (max-width: $vp-tablet) {
-  font-size: 86px;
+    margin: 5px 0 0;
+    letter-spacing: .02em;
+    font-size: 88px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -105,6 +108,11 @@
 .intro ul {
   list-style: none;
   margin: 0;
+
+  @media (max-width: $vp-tablet) {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
 }
 
 .intro .button {
@@ -135,6 +143,7 @@
 
   @media (max-width: $vp-tablet) {
     width: 183px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: $vp-mobile) {

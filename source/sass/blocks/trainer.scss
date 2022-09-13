@@ -31,6 +31,10 @@
     margin-bottom: 0;
     align-self: flex-end;
   }
+
+  @media (max-width: $vp-tablet) {
+    width: 268px;
+  }
 }
 
 .trainer h3 {

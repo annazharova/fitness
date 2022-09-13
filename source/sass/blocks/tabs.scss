@@ -1,10 +1,14 @@
 .tabs {
-text-align: center;
-margin-top: 17px;
+  text-align: center;
+  margin-top: 17px;
+
+  @media (max-width: $vp-tablet) {
+    margin-top: 10px;
+  }
 }
 
 .tabs>input[type="radio"] {
-display: none;
+  display: none;
 }
 
 #tab-btn-1:checked~#content-1,
@@ -36,6 +40,10 @@ display: none;
     color: $color-active;
   }
 
+  @media (max-width: $vp-tablet) {
+    margin: 0 25px;
+  }
+
   @media (max-width: $vp-mobile) {
     margin: 0 9px;
   }
@@ -50,6 +58,10 @@ display: none;
   font-weight: 400;
   font-size: 20px;
   line-height: 150%;
+
+  @media (max-width: $vp-tablet) {
+  font-size: 18px;
+  }
 }
 
 .tabs>input[type="radio"]:checked+label {

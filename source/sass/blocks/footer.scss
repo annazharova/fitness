@@ -1,6 +1,8 @@
 .footer {
   background-color: $color-black-footer;
   color: $color-white;
+
+
 }
 
 .footer .container {
@@ -8,6 +10,11 @@
   align-items: center;
   justify-content: space-between;
   min-height: 108px;
+
+  @media (max-width: $vp-tablet) {
+    min-height: 114px;
+    padding-right: 35px;
+  }
 
   @media (max-width: $vp-mobile) {
     min-height: 260px;
@@ -38,6 +45,11 @@
 
   &:active {
     fill: $color-active;
+  }
+
+  @media (max-width: $vp-tablet) {
+    margin-right: 35px;
+    margin-left: -7px;
   }
 }
 
