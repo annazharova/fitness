@@ -24,6 +24,10 @@
   @media (max-width: $vp-tablet) {
     margin-bottom: 35px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 24px;
+  }
 }
 
 .gym p {
@@ -45,6 +49,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  @media (max-width: $vp-mobile) {
+    position: relative;
+    min-height: 785px;
+  }
 }
 
 .gym__img {
@@ -55,6 +64,12 @@
   @media (max-width: $vp-tablet) {
     order: 2;
     width: 100%;
+  }
+
+  @media (max-width: $vp-mobile) {
+    position: absolute;
+    top: 133px;
+    left: 0;
   }
 }
 
@@ -70,6 +85,13 @@
     width: 266px;
     height: 167px;
   }
+
+  @media (max-width: $vp-mobile) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
 }
 
 .gym__description {
@@ -82,6 +104,12 @@
     width: 502px;
     margin: 0 auto;
     margin-bottom: 35px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 25px;
   }
 }
 
@@ -130,6 +158,22 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/video-poster@2x.webp");
+  }
+
+  @media (max-width: $vp-tablet) {
+    background-image: url("../img/video-poster-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-poster-tablet@2x.webp");
+    }
+  }
+
+  @media (max-width: $vp-mobile) {
+    background-image: url("../img/video-poster-mobile.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/video-poster-mobile@2x.webp");
+    }
   }
 }
 

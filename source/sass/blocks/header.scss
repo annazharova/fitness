@@ -60,4 +60,10 @@
     width: 82px;
     height: 39px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 20px;
+      width: 68px;
+      height: 15px;
+  }
 }

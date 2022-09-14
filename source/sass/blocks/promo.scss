@@ -8,7 +8,7 @@
   }
 
   @media (max-width: $vp-mobile) {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 70px;
   }
 }
@@ -59,11 +59,17 @@
 
   @media (max-width: $vp-mobile) {
     text-align: center;
+    padding-top: 35px;
   }
 }
 
 .default p {
   margin-top: 8px;
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 11px;
+    line-height: 140%;
+  }
 }
 
 .promo h3 {
@@ -108,6 +114,7 @@
     background-size: 100%;
     background-position-y: bottom;
     background-position-x: center;
+    text-align: center;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/promo-photo-mobile@2x.webp");
@@ -145,6 +152,10 @@
     padding-bottom: 3px;
     margin-bottom: 3px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin: 9px auto 0;
+  }
 }
 
 .promo .duration {
@@ -153,6 +164,10 @@
   margin-top: 8px;
   margin-left: 10px;
   margin-bottom: 20px;
+
+  @media (max-width: $vp-mobile) {
+    margin-left: 0;
+  }
 }
 
 .promo .price {
@@ -161,6 +176,10 @@
   margin-left: 10px;
   margin-top: 27px;
   margin-bottom: 42px;
+
+  @media (max-width: $vp-mobile) {
+    margin-left: 0;
+  }
 }
 
 .promo .description {
@@ -169,6 +188,11 @@
   margin-left: 10px;
   width: 190px;
   margin-top: 0;
+
+  @media (max-width: $vp-mobile) {
+    margin: 0 auto;
+    margin-top: -2px;
+  }
 }
 
 .hot .promo__link {
@@ -192,5 +216,10 @@
   &:active {
     color: $color-active;
     border-bottom: 1px solid $color-active;
+  }
+
+  @media (max-width: $vp-mobile) {
+    margin: 0 auto;
+    margin-top: 31px;
   }
 }

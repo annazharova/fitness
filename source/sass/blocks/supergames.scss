@@ -108,6 +108,11 @@
     line-height: 100%;
     margin-top: -1px;
   }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 52px;
+    line-height: 52px;
+  }
 }
 
 .supergames__date {

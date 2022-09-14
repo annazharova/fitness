@@ -12,6 +12,10 @@
     display: grid;
     grid-template-rows: 79px min-content 1fr;
     text-align: center;
+
+    @media (max-width: $vp-mobile) {
+      grid-template-rows: 68px min-content 1fr;
+    }
   }
 
   &:hover p {
@@ -24,6 +28,12 @@
     padding-left: 70px;
     padding-right: 45px;
     margin-top: 10px;
+
+    @media (max-width: $vp-mobile) {
+      padding-left: 50px;
+      padding-right: 25px;
+    }
+
   }
 
   &:hover h3 {
@@ -34,6 +44,10 @@
 
   @media (max-width: $vp-tablet) {
     width: 268px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: 226px;
   }
 }
 

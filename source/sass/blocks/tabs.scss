@@ -5,6 +5,10 @@
   @media (max-width: $vp-tablet) {
     margin-top: 10px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-top: 5px;
+  }
 }
 
 .tabs>input[type="radio"] {
@@ -45,7 +49,7 @@
   }
 
   @media (max-width: $vp-mobile) {
-    margin: 0 9px;
+    margin: 0 19px;
   }
 }
 
@@ -61,6 +65,10 @@
 
   @media (max-width: $vp-tablet) {
   font-size: 18px;
+  }
+
+  @media (max-width: $vp-mobile) {
+  font-size: 16px;
   }
 }
 

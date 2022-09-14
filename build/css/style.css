@@ -2229,6 +2229,10 @@ button,
     display: none;
   }
 
+  .videoPoster {
+    background-image: url("../img/video-poster-tablet.webp");
+  }
+
   .videoPoster:before {
     background-image: url("../img/video-button-tablet.png");
     width: 73px;
@@ -2255,6 +2259,7 @@ button,
     -moz-column-gap: unset;
     column-gap: unset;
     row-gap: 40px;
+    padding-top: 35px;
   }
 
   .membership__tile {
@@ -2608,6 +2613,10 @@ button,
     background-image: url("../img/intro-bg-tablet@2x.webp");
   }
 
+  .videoPoster {
+    background-image: url("../img/video-poster-tablet@2x.webp");
+  }
+
   .videoPoster:before {
     background-image: url("../img/video-button-tablet@2x.png");
   }
@@ -2637,13 +2646,26 @@ button,
     background-image: url("../img/intro-bg-mobile.webp");
   }
 
+  .header .logo__img {
+    margin-top: 20px;
+    width: 68px;
+    height: 15px;
+  }
+
   .intro__wrapper {
     width: 100%;
   }
 
   .intro__text {
-    -ms-grid-columns: 1fr 175px;
-    grid-template-columns: 1fr 175px;
+    -ms-grid-columns: 1fr 157px;
+    grid-template-columns: 1fr 157px;
+    -ms-grid-rows: 100px 76px 1fr 117px;
+    grid-template-rows: 100px 76px 1fr 117px;
+  }
+
+  .intro__text p {
+    font-size: 28px;
+    line-height: 34px;
   }
 
   .intro__img {
@@ -2651,11 +2673,18 @@ button,
   }
 
   .intro h1 {
-    font-size: 78px;
+    font-size: 82px;
+    margin: 8px 0 0;
+    letter-spacing: .01em;
   }
 
   .intro .button {
     width: 290px;
+  }
+
+  .phone {
+    margin-top: 17px;
+    font-size: 20px;
   }
 
   .gym {
@@ -2663,15 +2692,61 @@ button,
     margin-bottom: 70px;
   }
 
+  .gym .lead {
+    margin-bottom: 24px;
+  }
+
+  .gym .container {
+    position: relative;
+    min-height: 785px;
+  }
+
+  .gym__img {
+    position: absolute;
+    top: 133px;
+    left: 0;
+  }
+
+  .gym__video {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+
+  .gym__description {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .videoPoster {
+    background-image: url("../img/video-poster-mobile.webp");
+  }
+
   .membership {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
+  .membership .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .membership h2::before {
+    top: 89px;
+    width: 282px;
+  }
+
+  .membership__tab {
+    row-gap: 35px;
+  }
+
   .membership__tile {
-    padding: 55px 42px;
+    padding: 44px 42px;
     width: 290px;
-    height: 384px;
+    min-height: 384px;
   }
 
   .membership__tile h4 {
@@ -2681,11 +2756,14 @@ button,
 
   .membership__tile .price {
     font-size: 48px;
+    margin-top: 43px;
+    margin-bottom: 42px;
   }
 
   .membership__tile .price-shadow {
     font-size: 80px;
-    margin-bottom: -75px;
+    margin-bottom: -60px;
+    margin-top: 43px;
   }
 
   .membership__tile .price__img {
@@ -2693,8 +2771,20 @@ button,
     height: 33px;
   }
 
+  .membership__img {
+    display: none;
+  }
+
+  .tabs {
+    margin-top: 5px;
+  }
+
   .tabs > label {
-    margin: 0 9px;
+    margin: 0 19px;
+  }
+
+  .tabs > input[type="radio"] + label {
+    font-size: 16px;
   }
 
   .supergames {
@@ -2711,31 +2801,82 @@ button,
     background-position-x: center;
   }
 
+  .supergames__wrapper h2 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .trainers h2 {
+    margin-bottom: 43px;
+  }
+
+  .trainers__img {
+    width: 226px;
+  }
+
+  .trainers .swiper-wrapper {
+    max-width: 226px;
+    height: 274px;
+  }
+
+  .trainers .swiper-button-next {
+    right: 16px;
+  }
+
+  .trainers .swiper-button-prev {
+    left: 10px;
+  }
+
+  .trainer:hover {
+    -ms-grid-rows: 68px -webkit-min-content 1fr;
+    -ms-grid-rows: 68px min-content 1fr;
+    grid-template-rows: 68px -webkit-min-content 1fr;
+    grid-template-rows: 68px min-content 1fr;
+  }
+
+  .trainer:hover ul {
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  .trainer {
+    width: 226px;
+  }
+
   .advantages {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
+  .advantages .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .advantages ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 0;
+    -ms-grid-rows: 1fr 1fr 265px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 265px 1fr 1fr;
     text-align: center;
+    row-gap: 20px;
   }
 
   .advantages h2 {
-    margin-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .advantages h3 {
+    margin-top: 7px;
+    margin-bottom: 1px;
   }
 
   .advantages .description {
-    width: 232px;
+    max-width: 245px;
     margin: 0 auto;
   }
 
   .advantages__item {
-    height: 239px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr;
@@ -2743,6 +2884,9 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    min-height: 142px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .advantages__item p {
@@ -2754,10 +2898,22 @@ button,
     grid-column: unset;
     grid-row: unset;
     width: 100%;
+    margin-top: 18px;
+    margin-bottom: 20px;
+    min-height: 239px;
+  }
+
+  .advantages__central .quantity {
+    margin-top: 45px;
+    line-height: 80%;
+  }
+
+  .advantages__central .description {
+    margin-top: 10px;
   }
 
   .promo {
-    padding-top: 70px;
+    padding-top: 60px;
     padding-bottom: 70px;
   }
 
@@ -2768,6 +2924,12 @@ button,
 
   .promo .default {
     text-align: center;
+    padding-top: 35px;
+  }
+
+  .default p {
+    margin-top: 11px;
+    line-height: 140%;
   }
 
   .promo .hot {
@@ -2777,6 +2939,29 @@ button,
     background-size: 100%;
     background-position-y: bottom;
     background-position-x: center;
+    text-align: center;
+  }
+
+  .default .promo__link {
+    margin: 9px auto 0;
+  }
+
+  .promo .duration {
+    margin-left: 0;
+  }
+
+  .promo .price {
+    margin-left: 0;
+  }
+
+  .promo .description {
+    margin: 0 auto;
+    margin-top: -2px;
+  }
+
+  .hot .promo__link {
+    margin: 0 auto;
+    margin-top: 31px;
   }
 
   .reviews article {
@@ -2790,11 +2975,23 @@ button,
     justify-items: center;
   }
 
+  .reviews__img {
+    width: 68px;
+    margin-left: 15px;
+  }
+
+  .reviews h3 {
+    margin-top: 9px;
+    margin-left: 19px;
+    line-height: 140%;
+  }
+
   .reviews p {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     text-align: center;
+    margin-top: 15px;
   }
 
   .reviews .swiper {
@@ -2802,13 +2999,40 @@ button,
     height: 335px;
   }
 
+  .reviews .swiper-button-next {
+    right: 2px;
+  }
+
+  .reviews .swiper-button-prev {
+    left: -4px;
+  }
+
+  .bottom {
+    margin-top: 71px;
+  }
+
+  .free-lesson {
+    min-height: 386px;
+  }
+
   .free-lesson__wrapper {
     padding-right: 15px;
     padding-left: 15px;
   }
 
+  .free-lesson form {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    min-width: 290px;
+  }
+
+  .free-lesson input {
+    margin-bottom: 32px;
+  }
+
   .free-lesson .button {
     width: 100%;
+    margin-top: 8px;
   }
 
   .contacts {
@@ -2822,6 +3046,10 @@ button,
     width: 100%;
   }
 
+  .contacts h2::before {
+    content: none;
+  }
+
   .footer .container {
     min-height: 260px;
     display: -ms-grid;
@@ -2832,6 +3060,7 @@ button,
 
   .footer-nav {
     min-width: 100%;
+    width: 100%;
   }
 
   .footer-nav__list {
@@ -2843,6 +3072,7 @@ button,
     -webkit-column-gap: 70px;
     -moz-column-gap: 70px;
     column-gap: 70px;
+    row-gap: 30px;
   }
 
   .footer-social__list {
@@ -2857,6 +3087,10 @@ button,
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .header {
     background-image: url("../img/intro-bg-mobile@2x.webp");
+  }
+
+  .videoPoster {
+    background-image: url("../img/video-poster-mobile@2x.webp");
   }
 
   .supergames {

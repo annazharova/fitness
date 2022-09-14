@@ -56,6 +56,10 @@
     left: 265px;
     height: 129px;
   }
+
+  @media (max-width: $vp-mobile) {
+    content: none;
+  }
 }
 
 .contacts__wrapper h3 {

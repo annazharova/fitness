@@ -19,6 +19,11 @@
 .membership .container {
   z-index: 1;
   position: relative;
+
+  @media (max-width: $vp-mobile) {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 .membership h2 {
@@ -37,6 +42,11 @@
   @media (max-width: $vp-tablet) {
     top: 107px;
     width: 332px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    top: 89px;
+    width: 282px;
   }
 }
 
@@ -60,6 +70,11 @@
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: unset;
     row-gap: 40px;
+    padding-top: 35px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    row-gap: 35px;
   }
 }
 
@@ -80,9 +95,9 @@
   }
 
   @media (max-width: $vp-mobile) {
-    padding: 55px 42px;
+    padding: 44px 42px;
     width: 290px;
-    height: 384px;
+    min-height: 384px;
   }
 
   &:hover {
@@ -139,6 +154,8 @@
 
   @media (max-width: $vp-mobile) {
     font-size: 48px;
+    margin-top: 43px;
+    margin-bottom: 42px;
   }
 }
 
@@ -153,7 +170,8 @@
 
   @media (max-width: $vp-mobile) {
     font-size: 80px;
-    margin-bottom: -75px;
+    margin-bottom: -60px;
+    margin-top: 43px;
   }
 }
 
@@ -176,5 +194,9 @@
   @media (max-width: $vp-tablet) {
     bottom: -53px;
     width: 308px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    display: none;
   }
 }
