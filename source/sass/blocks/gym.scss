@@ -51,7 +51,6 @@
   }
 
   @media (max-width: $vp-mobile) {
-    // position: relative;
     min-height: 785px;
     padding: 0;
   }
@@ -65,12 +64,6 @@
   @media (max-width: $vp-tablet) {
     order: 2;
     width: 100%;
-  }
-
-  @media (max-width: $vp-mobile) {
-    // position: absolute;
-    // top: 133px;
-    // left: 0;
   }
 }
 
@@ -88,10 +81,6 @@
   }
 
   @media (max-width: $vp-mobile) {
-    // position: absolute;
-    // bottom: 0;
-    // width: 100%;
-    // left: 0;
     margin: 40px auto 0;
   }
 }
@@ -123,7 +112,7 @@
   }
 }
 
-.video_wrapper {
+.gym .video-wrapper {
   background-color: #000000;
   width: 365px;
   height: 228px;
@@ -134,7 +123,7 @@
   }
 }
 
-.videoIframe {
+.gym .videoIframe {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -145,13 +134,11 @@
   background-color: transparent;
 
   @media (max-width: $vp-mobile) {
-    // left: 50%;
-    // transform: translateX(-50%);
     position: unset;
   }
 }
 
-.videoPoster {
+.gym .videoPoster {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -184,11 +171,6 @@
 
   @media (max-width: $vp-mobile) {
     background-image: url("../img/video-poster-mobile.webp");
-    // left: 50%;
-    // transform: translateX(-50%);
-    // max-width: 320px;
-
-    // position: unset;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/video-poster-mobile@2x.webp");
@@ -196,11 +178,11 @@
   }
 }
 
-.videoPoster:hover {
+.gym .videoPoster:hover {
   cursor: pointer;
 }
 
-.videoPoster:before {
+.gym .videoPoster:before {
   background-image: url("../img/video-button.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -231,12 +213,12 @@
   }
 }
 
-.videoPoster:hover,
-.videoPoster:focus {
+.gym .videoPoster:hover,
+.gym .videoPoster:focus {
   background-blend-mode: multiply;
 }
 
-.videoWrapperActive .videoPoster {
+.gym .videoWrapperActive .videoPoster {
   opacity: 0;
   height: 0;
   -webkit-transition-delay: 0s, 800ms;
