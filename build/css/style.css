@@ -2698,51 +2698,32 @@ button,
   }
 
   .gym .container {
-    position: relative;
     min-height: 785px;
-  }
-
-  .gym__img {
-    position: absolute;
-    top: 133px;
-    left: 0;
+    padding: 0;
   }
 
   .gym__video {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
+    margin: 40px auto 0;
   }
 
   .gym__description {
     text-align: left;
     width: 100%;
     margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .video_wrapper {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    max-width: 320px;
+    width: 320px;
   }
 
   .videoIframe {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    position: unset;
   }
 
   .videoPoster {
     background-image: url("../img/video-poster-mobile.webp");
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    max-width: 320px;
   }
 
   .membership {
