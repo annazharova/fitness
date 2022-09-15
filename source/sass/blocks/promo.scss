@@ -54,7 +54,7 @@
   color: $color-hover;
 
   @media (max-width: $vp-tablet) {
-    padding-left: 30px;
+    padding-left: 28px;
     padding-right: 30px;
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@
   @media (max-width: $vp-tablet) {
     margin-block-start: auto;
     padding-bottom: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   @media (max-width: $vp-mobile) {

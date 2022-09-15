@@ -145,8 +145,12 @@
   position: absolute;
   top: -4px;
   left: 0;
-  width: 42px;
+  width: 64px;
   border-top: 1px solid $color-white;
+
+  @media (max-width: $vp-tablet) {
+    width: 42px;
+  }
 }
 
 .supergames__date-month {
@@ -177,8 +181,12 @@
   position: absolute;
   top: -4px;
   left: 0;
-  width: 56px;
+  width: 88px;
   border-top: 1px solid $color-white;
+
+  @media (max-width: $vp-tablet) {
+    width: 56px;
+  }
 }
 
 .supergames__time {

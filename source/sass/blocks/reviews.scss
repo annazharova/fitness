@@ -13,6 +13,7 @@
 
   @media (max-width: $vp-tablet) {
     width: 566px;
+    padding-left: 64px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -68,8 +69,12 @@
 }
 
 .reviews .swiper {
-  width: 672px;
+  width: 700px;
   height: 242px;
+
+  @media (max-width: $vp-tablet) {
+    width: 678px;
+  }
 
   @media (max-width: $vp-mobile) {
     width: 100%;
@@ -84,12 +89,24 @@
 }
 
 .reviews .swiper-button-next {
+  right: 16px;
+
+  @media (max-width: $vp-tablet) {
+    right: 1px;
+  }
+
   @media (max-width: $vp-mobile) {
     right: 2px;
   }
 }
 
 .reviews .swiper-button-prev {
+    left: 6px;
+
+  @media (max-width: $vp-tablet) {
+    left: -5px;
+  }
+
   @media (max-width: $vp-mobile) {
     left: -4px;
   }

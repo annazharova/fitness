@@ -12,10 +12,12 @@
 
 .trainers h2 {
   margin-bottom: 50px;
+  margin-left: 3px;
 
   @media (max-width: $vp-tablet) {
     text-align: center;
     margin-bottom: 40px;
+    margin-left: 0;
   }
 
   @media (max-width: $vp-mobile) {
@@ -94,8 +96,12 @@
 }
 
 .trainers .swiper-button-next {
-  right: 45px;
   left: auto;
+  right: 0;
+
+  @media (max-width: $vp-tablet) {
+    right: 45px;
+  }
 
   @media (max-width: $vp-mobile) {
     right: 16px;
@@ -103,8 +109,12 @@
 }
 
 .trainers .swiper-button-prev {
-  left: 45px;
   right: auto;
+  left: 45px;
+
+  @media (max-width: $vp-tablet) {
+    left: 36px;
+  }
 
   @media (max-width: $vp-mobile) {
     left: 10px;

@@ -1265,7 +1265,7 @@ button,
   position: absolute;
   top: -4px;
   left: 0;
-  width: 42px;
+  width: 64px;
   border-top: 1px solid #ffffff;
 }
 
@@ -1288,7 +1288,7 @@ button,
   position: absolute;
   top: -4px;
   left: 0;
-  width: 56px;
+  width: 88px;
   border-top: 1px solid #ffffff;
 }
 
@@ -1324,6 +1324,7 @@ button,
 
 .trainers h2 {
   margin-bottom: 50px;
+  margin-left: 3px;
 }
 
 .trainers ul {
@@ -1382,13 +1383,13 @@ button,
 }
 
 .trainers .swiper-button-next {
-  right: 45px;
   left: auto;
+  right: 0;
 }
 
 .trainers .swiper-button-prev {
-  left: 45px;
   right: auto;
+  left: 45px;
 }
 
 .trainers .swiper-button-next:after,
@@ -1482,7 +1483,7 @@ button,
   background-color: #f8f9fc;
   min-height: 664px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .advantages ul {
@@ -1822,8 +1823,16 @@ button,
 }
 
 .reviews .swiper {
-  width: 672px;
+  width: 700px;
   height: 242px;
+}
+
+.reviews .swiper-button-next {
+  right: 16px;
+}
+
+.reviews .swiper-button-prev {
+  left: 6px;
 }
 
 .reviews .swiper-button-next:after,
@@ -2023,6 +2032,7 @@ button,
 .footer .logo {
   fill: #ffffff;
   margin-right: 235px;
+  margin-left: -5px;
 }
 
 .footer .logo:hover,
@@ -2042,7 +2052,7 @@ button,
 
 .footer-nav {
   margin-top: 10px;
-  width: 796px;
+  width: 799px;
 }
 
 .footer-nav__list {
@@ -2262,12 +2272,13 @@ button,
     -moz-column-gap: unset;
     column-gap: unset;
     row-gap: 40px;
-    padding-top: 35px;
+    padding-top: 45px;
   }
 
   .membership__tile {
     width: 442px;
     margin: 0 auto;
+    padding: 57px 70px;
   }
 
   .membership__img {
@@ -2329,6 +2340,10 @@ button,
     margin-right: 4px;
   }
 
+  .supergames__date-day::before {
+    width: 42px;
+  }
+
   .supergames__date-month {
     font-size: 10px;
     margin-top: 0px;
@@ -2336,6 +2351,10 @@ button,
 
   .supergames__date-hour {
     font-size: 24px;
+  }
+
+  .supergames__date-hour::before {
+    width: 56px;
   }
 
   .supergames__time {
@@ -2355,6 +2374,7 @@ button,
   .trainers h2 {
     text-align: center;
     margin-bottom: 40px;
+    margin-left: 0;
   }
 
   .trainers__img {
@@ -2368,6 +2388,14 @@ button,
 
   .trainers .swiper-wrapper {
     max-width: 566px;
+  }
+
+  .trainers .swiper-button-next {
+    right: 45px;
+  }
+
+  .trainers .swiper-button-prev {
+    left: 36px;
   }
 
   .trainer {
@@ -2385,10 +2413,10 @@ button,
     -ms-grid-rows: 1fr 239px 1fr;
     grid-template-rows: 1fr 239px 1fr;
     min-height: 463px;
-    -webkit-column-gap: 35px;
-    -moz-column-gap: 35px;
-    column-gap: 35px;
-    row-gap: 42px;
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+    row-gap: 44px;
   }
 
   .advantages .quantity {
@@ -2425,6 +2453,8 @@ button,
     width: 442px;
     height: auto;
     margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 5px;
   }
 
   .advantages__central::before {
@@ -2446,7 +2476,7 @@ button,
   }
 
   .advantages__central .description {
-    margin-top: 12px;
+    margin-top: 14px;
     width: 186px;
   }
 
@@ -2468,7 +2498,7 @@ button,
   }
 
   .promo .default {
-    padding-left: 30px;
+    padding-left: 28px;
     padding-right: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2498,19 +2528,32 @@ button,
     -webkit-margin-before: auto;
     margin-block-start: auto;
     padding-bottom: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 2px;
   }
 
   .reviews article {
     width: 566px;
+    padding-left: 64px;
   }
 
   .reviews h2 {
     padding-bottom: 40px;
   }
 
+  .reviews .swiper {
+    width: 678px;
+  }
+
   .reviews .swiper-slide {
     margin: auto;
+  }
+
+  .reviews .swiper-button-next {
+    right: 1px;
+  }
+
+  .reviews .swiper-button-prev {
+    left: -5px;
   }
 
   .bottom {

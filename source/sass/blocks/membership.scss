@@ -70,7 +70,7 @@
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: unset;
     row-gap: 40px;
-    padding-top: 35px;
+    padding-top: 45px;
   }
 
   @media (max-width: $vp-mobile) {
@@ -92,6 +92,7 @@
   @media (max-width: $vp-tablet) {
     width: 442px;
     margin: 0 auto;
+    padding: 57px 70px;
   }
 
   @media (max-width: $vp-mobile) {
