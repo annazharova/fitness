@@ -2814,10 +2814,22 @@ button,
     line-height: 52px;
   }
 
+  .supergames__date-title {
+    margin-bottom: -2px;
+  }
+
+  .supergames__description {
+    margin-bottom: 25px;
+  }
+
   .supergames__img {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  .trainers {
+    margin-bottom: 70px;
   }
 
   .trainers h2 {
@@ -2931,6 +2943,10 @@ button,
     padding-bottom: 70px;
   }
 
+  .promo h2 {
+    padding-bottom: 42px;
+  }
+
   .promo ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -2955,7 +2971,7 @@ button,
   }
 
   .hot__wrapper {
-    min-height: 292px;
+    min-height: 299px;
   }
 
   .default .promo__link {
@@ -2968,6 +2984,8 @@ button,
 
   .promo .price {
     margin-left: 0;
+    margin-top: 28px;
+    margin-bottom: 40px;
   }
 
   .promo .description {

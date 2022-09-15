@@ -20,6 +20,10 @@
   @media (max-width: $vp-tablet) {
     padding-bottom: 40px;
   }
+
+  @media (max-width: $vp-mobile) {
+    padding-bottom: 42px;
+  }
 }
 
 .promo ul {
@@ -111,7 +115,7 @@
   }
 
   @media (max-width: $vp-mobile) {
-    min-height: 292px;
+    min-height: 299px;
   }
 }
 
@@ -172,6 +176,8 @@
 
   @media (max-width: $vp-mobile) {
     margin-left: 0;
+    margin-top: 28px;
+    margin-bottom: 40px;
   }
 }
 

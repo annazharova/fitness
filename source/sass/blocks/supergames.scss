@@ -121,6 +121,10 @@
   @media (max-width: $vp-tablet) {
     font-size: 12px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: -2px;
+  }
 }
 
 .supergames__date-day {
@@ -200,6 +204,10 @@
   @media (max-width: $vp-tablet) {
     font-size: 12px;
     margin-top: 0;
+  }
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 25px;
   }
 }
 

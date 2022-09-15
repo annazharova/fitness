@@ -4,6 +4,10 @@
   @media (max-width: $vp-tablet) {
     margin-bottom: 100px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 70px;
+  }
 }
 
 .trainers h2 {
