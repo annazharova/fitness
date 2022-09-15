@@ -252,6 +252,20 @@
             </p>
             <a class="button" href="#">заполнить заявку</a>
           </div>
+          <picture>
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source media="(min-width: 1200px)" type="image/webp" srcset="img/crossfit-photo.webp 1x, img/crossfit-photo@2x.webp 2x">
+            <!-- 1х: 386px; 2x: 772px -->
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/crossfit-photo-tablet.webp 1x, img/crossfit-photo-tablet@2x.webp 2x">
+            <!-- 1х: 290px; 2x: 580px -->
+            <source media="(min-width: 768px)" type="image/webp" srcset="img/crossfit-photo-mobile.webp 1x, img/crossfit-photo-mobile@2x.webp 2x">
+            <!-- 1х: 660px; 2x: 1320px -->
+            <source media="(min-width: 1200px)" srcset="img/crossfit-photo.jpg 1x, img/crossfit-photo@2x.jpg 2x">
+            <!-- 1х: 386px; 2x: 772px -->
+            <source media="(min-width: 1200px)" srcset="img/crossfit-photo-tablet.jpg 1x, img/crossfit-photo-tablet@2x.jpg 2x">
+            <!-- 1х: 290px; 2x: 580px -->
+            <img class="supergames__img" src="img/crossfit-photo-mobile.jpg" srcset="img/crossfit-photo-mobile@2x.jpg 2x" width="660" height="500" alt="Спортсмен в облаке магнезии">
+          </picture>
         </section>
       </div>
       <section class="trainers">
@@ -524,10 +538,26 @@
           <h2>Акции</h2>
           <ul>
             <li class="hot">
-              <p class="duration">Год</p>
-              <p class="price">4999</p>
-              <p class="description">Безлимитный абонемент в тренажерный зал</p>
-              <a class="promo__link" href="#">подробнее</a>
+              <div class="hot__wrapper">
+                <p class="duration">Год</p>
+                <p class="price">4999</p>
+                <p class="description">Безлимитный абонемент в тренажерный зал</p>
+                <a class="promo__link" href="#">подробнее</a>
+              </div>
+              <picture>
+                <!-- 1х: 660px; 2x: 1320px -->
+                <source media="(min-width: 1200px)" type="image/webp" srcset="img/promo-photo.webp 1x, img/promo-photo@2x.webp 2x">
+                <!-- 1х: 386px; 2x: 772px -->
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/promo-photo-tablet.webp 1x, img/promo-photo-tablet@2x.webp 2x">
+                <!-- 1х: 290px; 2x: 580px -->
+                <source media="(min-width: 768px)" type="image/webp" srcset="img/promo-photo-mobile.webp 1x, img/promo-photo-mobile@2x.webp 2x">
+                <!-- 1х: 660px; 2x: 1320px -->
+                <source media="(min-width: 1200px)" srcset="img/promo-photo.jpg 1x, img/promo-photo@2x.jpg 2x">
+                <!-- 1х: 386px; 2x: 772px -->
+                <source media="(min-width: 1200px)" srcset="img/promo-photo-tablet.jpg 1x, img/promo-photo-tablet@2x.jpg 2x">
+                <!-- 1х: 290px; 2x: 580px -->
+                <img class="promo__img" src="img/promo-photo-mobile.jpg" srcset="img/promo-photo-mobile@2x.jpg 2x" width="280" height="462" alt="Спортсменка в синей форме">
+              </picture>
             </li>
             <li class="default">
               <h3>Месяц бесплатно</h3>

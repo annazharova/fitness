@@ -4,41 +4,19 @@
   min-height: 500px;
   margin-top: 120px;
   margin-bottom: 120px;
-  background-image: url("../img/crossfit-photo.webp");
-  background-repeat: no-repeat;
-  background-size: 57.3%;
-  background-position-y: center;
-  background-position-x: right;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/crossfit-photo@2x.webp");
-  }
 
   @media (max-width: $vp-tablet) {
     margin-top: 100px;
     margin-bottom: 100px;
     min-height: 292px;
-    background-image: url("../img/crossfit-photo-tablet.webp");
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/crossfit-photo-tablet@2x.webp");
-    }
   }
 
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: fit-content 1fr;
     margin-top: 70px;
     margin-bottom: 70px;
-    height: 584px;
-    background-image: url("../img/crossfit-photo-mobile.webp");
-    background-size: 100%;
-    background-position-y: bottom;
-    background-position-x: center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/crossfit-photo-mobile@2x.webp");
-    }
+    height: fit-content;
   }
 }
 
@@ -89,6 +67,10 @@
   @media (max-width: $vp-tablet) {
     padding: 51px 45px;
     grid-template-columns: 1fr 55px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    height: fit-content;
   }
 }
 
@@ -223,4 +205,12 @@
 
 .supergames__wrapper a {
   color: $color-white;
+}
+
+.supergames__img {
+  @media (max-width: $vp-mobile) {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }

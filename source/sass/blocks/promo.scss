@@ -80,45 +80,38 @@
 
 .promo .hot {
   grid-row: 1 / 3;
-  background-color: $color-red;
-  color: $color-white;
-  border: none;
-  background-image: url("../img/promo-photo.webp");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-y: center;
-  background-position-x: right;
-  padding: 35px;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/promo-photo@2x.webp");
-  }
+  // padding: 35px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  min-height: 462px;
 
   @media (max-width: $vp-tablet) {
-    background-image: url("../img/promo-photo-tablet.webp");
-    background-size: contain;
-    // background-size: 59%;
     grid-column: 1 / 3;
     grid-row: unset;
     min-height: 462px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-photo-tablet@2x.webp");
-    }
+    grid-template-columns: 1fr 399px;
   }
 
   @media (max-width: $vp-mobile) {
     grid-column: unset;
-    min-height: 598px;
-    background-image: url("../img/promo-photo-mobile.webp");
-    background-size: 100%;
-    background-position-y: bottom;
-    background-position-x: center;
+    min-height: 292px;
     text-align: center;
+    grid-template-columns: 1fr;
+  }
+}
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/promo-photo-mobile@2x.webp");
-    }
+.hot__wrapper {
+  padding: 35px;
+  background-color: $color-red;
+  color: $color-white;
+  border: none;
+
+  @media (max-width: $vp-tablet) {
+    min-height: 292px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    min-height: 292px;
   }
 }
 
@@ -195,7 +188,7 @@
   }
 }
 
-.hot .promo__link {
+.hot__wrapper .promo__link {
   color: $color-white;
   border-bottom: 1px solid $color-white;
   margin-left: 10px;
@@ -222,4 +215,9 @@
     margin: 0 auto;
     margin-top: 31px;
   }
+}
+
+.promo__img {
+    width: 100%;
+    height: auto;
 }

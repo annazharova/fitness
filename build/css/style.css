@@ -884,7 +884,7 @@ button,
 }
 
 .video_wrapper {
-  background-color: #000;
+  background-color: #000000;
   width: 365px;
   height: 228px;
   position: relative;
@@ -1165,11 +1165,6 @@ button,
   min-height: 500px;
   margin-top: 120px;
   margin-bottom: 120px;
-  background-image: url("../img/crossfit-photo.webp");
-  background-repeat: no-repeat;
-  background-size: 57.3%;
-  background-position-y: center;
-  background-position-x: right;
 }
 
 .supergames .button {
@@ -1680,15 +1675,18 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 280px;
+  grid-template-columns: 1fr 280px;
+  min-height: 462px;
+}
+
+.hot__wrapper {
+  padding: 35px;
   background-color: #ed0233;
   color: #ffffff;
   border: none;
-  background-image: url("../img/promo-photo.webp");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-y: center;
-  background-position-x: right;
-  padding: 35px;
 }
 
 .promo__link {
@@ -1745,7 +1743,7 @@ button,
   margin-top: 0;
 }
 
-.hot .promo__link {
+.hot__wrapper .promo__link {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   margin-left: 10px;
@@ -1762,15 +1760,20 @@ button,
   width: fit-content;
 }
 
-.hot .promo__link:hover,
-.hot .promo__link:focus {
+.hot__wrapper .promo__link:hover,
+.hot__wrapper .promo__link:focus {
   color: #1c3374;
   border-bottom: 1px solid #1c3374;
 }
 
-.hot .promo__link:active {
+.hot__wrapper .promo__link:active {
   color: #b80027;
   border-bottom: 1px solid #b80027;
+}
+
+.promo__img {
+  width: 100%;
+  height: auto;
 }
 
 .reviews article {
@@ -2288,7 +2291,6 @@ button,
     margin-top: 100px;
     margin-bottom: 100px;
     min-height: 292px;
-    background-image: url("../img/crossfit-photo-tablet.webp");
   }
 
   .supergames .button {
@@ -2479,13 +2481,17 @@ button,
   }
 
   .promo .hot {
-    background-image: url("../img/promo-photo-tablet.webp");
-    background-size: contain;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1 / 3;
     grid-row: unset;
     min-height: 462px;
+    -ms-grid-columns: 1fr 399px;
+    grid-template-columns: 1fr 399px;
+  }
+
+  .hot__wrapper {
+    min-height: 292px;
   }
 
   .default .promo__link {
@@ -2620,14 +2626,6 @@ button,
   .videoPoster:before {
     background-image: url("../img/video-button-tablet@2x.png");
   }
-
-  .supergames {
-    background-image: url("../img/crossfit-photo-tablet@2x.webp");
-  }
-
-  .promo .hot {
-    background-image: url("../img/promo-photo-tablet@2x.webp");
-  }
 }
 
 @media (max-width: 767px) {
@@ -2654,6 +2652,8 @@ button,
 
   .intro__wrapper {
     width: 100%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .intro__text {
@@ -2661,6 +2661,7 @@ button,
     grid-template-columns: 1fr 157px;
     -ms-grid-rows: 100px 76px 1fr 117px;
     grid-template-rows: 100px 76px 1fr 117px;
+    margin: 0 auto;
   }
 
   .intro__text p {
@@ -2720,8 +2721,28 @@ button,
     margin-bottom: 25px;
   }
 
+  .video_wrapper {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 320px;
+  }
+
+  .videoIframe {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
   .videoPoster {
     background-image: url("../img/video-poster-mobile.webp");
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 320px;
   }
 
   .membership {
@@ -2790,20 +2811,32 @@ button,
   .supergames {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-rows: -webkit-fit-content 1fr;
+    -ms-grid-rows: fit-content 1fr;
+    grid-template-rows: -webkit-fit-content 1fr;
+    grid-template-rows: fit-content 1fr;
     margin-top: 70px;
     margin-bottom: 70px;
-    height: 584px;
-    background-image: url("../img/crossfit-photo-mobile.webp");
-    background-size: 100%;
-    background-position-y: bottom;
-    background-position-x: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+
+  .supergames__wrapper {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 
   .supergames__wrapper h2 {
     font-size: 52px;
     line-height: 52px;
+  }
+
+  .supergames__img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .trainers h2 {
@@ -2934,12 +2967,14 @@ button,
 
   .promo .hot {
     grid-column: unset;
-    min-height: 598px;
-    background-image: url("../img/promo-photo-mobile.webp");
-    background-size: 100%;
-    background-position-y: bottom;
-    background-position-x: center;
+    min-height: 292px;
     text-align: center;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .hot__wrapper {
+    min-height: 292px;
   }
 
   .default .promo__link {
@@ -2959,7 +2994,7 @@ button,
     margin-top: -2px;
   }
 
-  .hot .promo__link {
+  .hot__wrapper .promo__link {
     margin: 0 auto;
     margin-top: 31px;
   }
@@ -3018,6 +3053,7 @@ button,
   .free-lesson__wrapper {
     padding-right: 15px;
     padding-left: 15px;
+    margin: 0 auto;
   }
 
   .free-lesson form {
@@ -3147,14 +3183,6 @@ button,
   .videoPoster {
     background-image: url("../img/video-poster-mobile@2x.webp");
   }
-
-  .supergames {
-    background-image: url("../img/crossfit-photo-mobile@2x.webp");
-  }
-
-  .promo .hot {
-    background-image: url("../img/promo-photo-mobile@2x.webp");
-  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
@@ -3169,13 +3197,5 @@ button,
 
   .videoPoster:before {
     background-image: url("../img/video-button@2x.png");
-  }
-
-  .supergames {
-    background-image: url("../img/crossfit-photo@2x.webp");
-  }
-
-  .promo .hot {
-    background-image: url("../img/promo-photo@2x.webp");
   }
 }

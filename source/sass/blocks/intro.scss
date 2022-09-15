@@ -17,6 +17,7 @@
 
   @media (max-width: $vp-mobile) {
     width: 100%;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -33,6 +34,7 @@
   @media (max-width: $vp-mobile) {
     grid-template-columns: 1fr 157px;
     grid-template-rows: 100px 76px 1fr 117px;
+    margin: 0 auto;
   }
 }
 
