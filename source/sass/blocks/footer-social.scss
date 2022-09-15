@@ -1,3 +1,9 @@
+.footer-social {
+  @media (max-width: $vp-mobile) {
+    margin-left: -4px;
+  }
+}
+
 .footer-social__list {
   display: flex;
 

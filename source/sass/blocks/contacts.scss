@@ -41,6 +41,10 @@
   @media (max-width: $vp-tablet) {
     margin-bottom: 12px;
   }
+
+  @media (max-width: $vp-mobile) {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts h2::before {
@@ -85,5 +89,29 @@
     font-size: 18px;
     line-height: 152.34%;
     margin-top: 5px;
+  }
+}
+
+.contacts__address {
+  @media (max-width: $vp-mobile) {
+    order: 1;
+  }
+}
+
+.contacts__phone {
+  @media (max-width: $vp-mobile) {
+    order: 3;
+  }
+}
+
+.contacts__time {
+  @media (max-width: $vp-mobile) {
+    order: 2;
+  }
+}
+
+.contacts__email {
+  @media (max-width: $vp-mobile) {
+    order: 4;
   }
 }

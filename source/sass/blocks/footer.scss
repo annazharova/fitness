@@ -1,8 +1,6 @@
 .footer {
   background-color: $color-black-footer;
   color: $color-white;
-
-
 }
 
 .footer .container {
@@ -21,6 +19,7 @@
     display: grid;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-items: unset;
   }
 }
 
@@ -31,6 +30,11 @@
   @media (max-width: $vp-tablet) {
     font-size: 14px;
     line-height: 16px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    font-size: 16px;
+    line-height: 19px;
   }
 }
 
@@ -50,6 +54,11 @@
   @media (max-width: $vp-tablet) {
     margin-right: 35px;
     margin-left: -7px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    margin-right: 0;
+    margin-left: -3px;
   }
 }
 
