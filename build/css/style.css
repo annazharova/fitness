@@ -1108,9 +1108,9 @@ button,
   display: none;
 }
 
-#tab-btn-1:checked ~ #content-1,
-#tab-btn-2:checked ~ #content-2,
-#tab-btn-3:checked ~ #content-3 {
+.tabs > input:nth-of-type(1):checked ~ .membership__tabs:nth-of-type(1),
+.tabs > input:nth-of-type(2):checked ~ .membership__tabs:nth-of-type(2),
+.tabs > input:nth-of-type(3):checked ~ .membership__tabs:nth-of-type(3) {
   display: block;
 }
 
