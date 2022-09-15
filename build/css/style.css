@@ -1888,6 +1888,10 @@ button,
   padding-bottom: 5px;
   padding-left: 0;
   padding-right: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 .free-lesson input::-webkit-input-placeholder {
