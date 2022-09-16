@@ -118,6 +118,11 @@
   height: 228px;
   position: relative;
 
+  @media (max-width: $vp-tablet) {
+    width: 266px;
+    height: 167px;
+  }
+
   @media (max-width: $vp-mobile) {
     width: 320px;
   }

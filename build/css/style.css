@@ -1012,7 +1012,7 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding: 61px 70px;
+  padding: 55px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1101,7 +1101,7 @@ button,
 
 .tabs {
   text-align: center;
-  margin-top: 17px;
+  margin-top: 15px;
 }
 
 .tabs > input[type="radio"] {
@@ -2259,6 +2259,11 @@ button,
 
   .gym__description p:last-child {
     display: none;
+  }
+
+  .gym .video-wrapper {
+    width: 266px;
+    height: 167px;
   }
 
   .gym .videoPoster {
