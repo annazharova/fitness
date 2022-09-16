@@ -645,17 +645,6 @@ button,
   margin-top: 30px;
 }
 
-.header .logo__img:hover,
-.header .logo__img:focus {
-  background-color: unset;
-  fill: #103aae;
-}
-
-.header .logo__img:active {
-  background-color: unset;
-  fill: #b80027;
-}
-
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2038,15 +2027,6 @@ button,
   fill: #ffffff;
   margin-right: 235px;
   margin-left: -5px;
-}
-
-.footer .logo:hover,
-.footer .logo:focus {
-  fill: #103aae;
-}
-
-.footer .logo:active {
-  fill: #b80027;
 }
 
 .footer ul {

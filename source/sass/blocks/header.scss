@@ -45,17 +45,6 @@
   fill: $color-white;
   margin-top: 30px;
 
-  &:hover,
-  &:focus {
-    background-color: unset;
-    fill: $color-blue;
-  }
-
-  &:active {
-    background-color: unset;
-    fill: $color-active;
-  }
-
   @media (max-width: $vp-tablet) {
     width: 82px;
     height: 39px;
