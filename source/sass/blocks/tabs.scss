@@ -36,7 +36,8 @@
   top: 1px;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     color: $color-hover;
   }
 

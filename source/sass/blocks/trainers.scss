@@ -53,6 +53,7 @@
 .trainers__img {
   position: absolute;
   top: 0;
+  min-width: 260px;
 
   @media (max-width: $vp-tablet) {
     width: 268px;

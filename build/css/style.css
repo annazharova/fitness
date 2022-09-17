@@ -969,7 +969,7 @@ button,
 .membership h2::before {
   content: '';
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1130,7 +1130,8 @@ button,
 }
 
 .tabs > label:hover,
-.tabs > label:focus {
+.tabs > label:focus,
+.tabs > label:focus-within {
   color: #1c3374;
 }
 
@@ -1352,6 +1353,7 @@ button,
 .trainers__img {
   position: absolute;
   top: 0;
+  min-width: 260px;
 }
 
 .trainers__slider {
@@ -1409,7 +1411,9 @@ button,
   width: 260px;
 }
 
-.trainer:hover {
+.trainer:hover,
+.trainer:focus,
+.trainer:focus-within {
   background-color: #102654;
   display: -ms-grid;
   display: grid;
@@ -1420,32 +1424,33 @@ button,
   text-align: center;
 }
 
-.trainer:hover p {
+.trainer:hover p,
+.trainer:focus p,
+.trainer:focus-within p {
   display: block;
   margin-top: -3px;
 }
 
-.trainer:hover ul {
+.trainer:hover ul,
+.trainer:focus ul,
+.trainer:focus-within ul {
   display: block;
   padding-left: 70px;
   padding-right: 45px;
   margin-top: 10px;
 }
 
-.trainer:hover h3 {
-  -ms-grid-row-align: unset;
-  -ms-grid-column-align: unset;
-  place-self: unset;
-  margin-bottom: 0;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
+.trainer:hover h3,
+.trainer:focus h3,
+.trainer:focus-within h3 {
+  margin-top: 51px;
 }
 
 .trainer h3 {
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
-  margin-top: 250px;
+  margin-top: 245px;
 }
 
 .trainer p {
@@ -1855,6 +1860,7 @@ button,
   background-color: #102654;
   color: #ffffff;
   padding-top: 70px;
+  padding-left: 15px;
 }
 
 .free-lesson h2 {
@@ -2577,6 +2583,7 @@ button,
     -ms-flex-pack: unset;
     justify-content: unset;
     padding-right: 0;
+    padding-left: 0;
     min-height: 324px;
   }
 
@@ -2908,14 +2915,18 @@ button,
     left: 10px;
   }
 
-  .trainer:hover {
+  .trainer:hover,
+  .trainer:focus,
+  .trainer:focus-within {
     -ms-grid-rows: 68px -webkit-min-content 1fr;
     -ms-grid-rows: 68px min-content 1fr;
     grid-template-rows: 68px -webkit-min-content 1fr;
     grid-template-rows: 68px min-content 1fr;
   }
 
-  .trainer:hover ul {
+  .trainer:hover ul,
+  .trainer:focus ul,
+  .trainer:focus-within ul {
     padding-left: 50px;
     padding-right: 25px;
   }
