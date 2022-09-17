@@ -2,11 +2,13 @@
   padding-left: 120px;
   border-top: 1px solid #74819c;
   padding-top: 70px;
+  margin-bottom: 60px;
 
   @media (max-width: $vp-tablet) {
     padding-right: 45px;
     padding-left: 133px;
     padding-bottom: 60px;
+    margin-bottom: 0;
   }
 
   @media (max-width: $vp-mobile) {

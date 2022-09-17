@@ -7,7 +7,9 @@
   height: 100%;
   width: 260px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-within {
     background-color: $color-black;
     display: grid;
     grid-template-rows: 79px min-content 1fr;
@@ -18,12 +20,16 @@
     }
   }
 
-  &:hover p {
+  &:hover p,
+  &:focus p,
+  &:focus-within p {
     display: block;
     margin-top: -3px;
   }
 
-  &:hover ul {
+  &:hover ul,
+  &:focus ul,
+  &:focus-within ul {
     display: block;
     padding-left: 70px;
     padding-right: 45px;
@@ -33,13 +39,12 @@
       padding-left: 50px;
       padding-right: 25px;
     }
-
   }
 
-  &:hover h3 {
-    place-self: unset;
-    margin-bottom: 0;
-    align-self: flex-end;
+  &:hover h3,
+  &:focus h3,
+  &:focus-within h3 {
+    margin-top: 51px;
   }
 
   @media (max-width: $vp-tablet) {
@@ -55,9 +60,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
-  margin-top: 0;
-  margin-bottom: 23px;
-  place-self: flex-end;
+  margin-top: 245px;
 }
 
 .trainer p {

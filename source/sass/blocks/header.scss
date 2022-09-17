@@ -37,6 +37,11 @@
   align-items: center;
 }
 
+.header ul {
+  list-style: none;
+  margin: 0;
+}
+
 .header a {
   color: $color-white;
 }
@@ -44,17 +49,6 @@
 .header .logo__img {
   fill: $color-white;
   margin-top: 30px;
-
-  &:hover,
-  &:focus {
-    background-color: unset;
-    fill: $color-blue;
-  }
-
-  &:active {
-    background-color: unset;
-    fill: $color-active;
-  }
 
   @media (max-width: $vp-tablet) {
     width: 82px;

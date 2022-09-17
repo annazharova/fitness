@@ -74,7 +74,7 @@ const reviewSwiper = new Swiper(".review-swiper", {
   spaceBetween: 0,
   slidesPerGroup: 1,
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   loopFillGroupWithBlank: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -101,3 +101,34 @@ function videoPlay(wrapper) {
   // подставляем в src параметр из data
   iframe.attr('src',src);
 }
+
+const label = document.querySelectorAll('.tabs label');
+
+// Execute a function when the user presses a key on the keyboard
+label.forEach(setKeydown);
+
+function setKeydown(elem){
+  elem.addEventListener('keydown', function(event) {
+    // If the user presses the "Enter" key on the keyboard
+    if (event.key === 'Enter') {
+      // Cancel the default action, if needed
+      event.preventDefault();
+      // Trigger the button element with a click
+      elem.click();
+    }
+  });
+}
+
+// // Get the input field
+// var input = document.getElementById("myInput");
+
+// // Execute a function when the user presses a key on the keyboard
+// input.addEventListener("keypress", function(event) {
+//   // If the user presses the "Enter" key on the keyboard
+//   if (event.key === "Enter") {
+//     // Cancel the default action, if needed
+//     event.preventDefault();
+//     // Trigger the button element with a click
+//     document.getElementById("myBtn").click();
+//   }
+// });

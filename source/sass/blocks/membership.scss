@@ -33,7 +33,7 @@
 .membership h2::before {
   content: '';
   position: absolute;
-  top: 124px;
+  top: 122px;
   left: 50%;
   transform: translateX(-50%);
   width: 341px;
@@ -63,6 +63,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
+  row-gap: 40px;
   padding-top: 40px;
 
   @media (max-width: $vp-tablet) {
@@ -85,7 +86,7 @@
   width: 360px;
   min-height: 445px;
   justify-content: flex-start;
-  padding: 61px 70px;
+  padding: 55px 70px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -127,7 +128,7 @@
 
 .membership__tile .button {
   width: 206px;
-  height: 66px;
+  min-height: 66px;
   display: flex;
   align-items: center;
   justify-content: center;

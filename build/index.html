@@ -18,9 +18,11 @@
             <use href="img/sprite_auto.svg#logo"></use>
           </svg>
         </a>
-        <p class="phone">
-          <a href="tel:+78005555555">8-800-555-55-55</a>
-        </p>
+        <ul>
+          <li class="phone">
+            <a href="tel:+78005555555">8-800-555-55-55</a>
+          </li>
+        </ul>
       </div>
       <section class="intro container">
         <div class="intro__wrapper">
@@ -85,8 +87,9 @@
             <img class="gym__img" src="img/gym-photomobile.jpg" srcset="img/gym-photo-mobile@2x.jpg 2x" width="660" height="401" alt="Зал с тренажёрами.">
           </picture>
           <div class="gym__video video-wrapper js-videoWrapper">
-            <iframe class="videoIframe js-videoIframe" allowfullscreen data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white" title="Видеообзор тренажерного зала"></iframe>
-            <button class="videoPoster js-videoPoster" aria-label="Play"></button>
+            <iframe class="videoIframe js-videoIframe" allowfullscreen data-src="https://www.youtube.com/embed/9TZXsZItgdw?autoplay=1&modestbranding=1&rel=0&hl=ru&showinfo=0&color=white" title="Видеообзор тренажерного зала" tabindex="-1"></iframe>
+            <div class="videoPoster js-videoPoster"></в>
+            <button class="videoButton" aria-label="Play"></button>
           </div>
         </div>
       </section>
@@ -95,11 +98,11 @@
           <h2>Абонементы</h2>
           <div class="tabs">
             <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
-            <label for="tab-btn-1">1 месяц</label>
+            <label for="tab-btn-1" tabindex="0">1 месяц</label>
             <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-            <label for="tab-btn-2">6 месяцев</label>
+            <label class="sad" for="tab-btn-2" tabindex="0">6 месяцев</label>
             <input type="radio" name="tab-btn" id="tab-btn-3" value="">
-            <label for="tab-btn-3">12 месяцев</label>
+            <label for="tab-btn-3" tabindex="0">12 месяцев</label>
             <div class="membership__tabs" id="content-1">
               <h3 class="visually-hidden">1 месяц</h3>
               <ul class="membership__tab">
@@ -290,7 +293,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/pavlova-mobile.jpg" srcset="img/trainers/pavlova-mobile@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Анна Павлова</h3>
                   <p>Йога</p>
                   <ul>
@@ -315,7 +318,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/lavrov-mobile.jpg" srcset="img/trainers/lavrov-mobile@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Алексей Лавров</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -340,7 +343,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Александр Пашков</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -365,7 +368,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/ketova-mobile.jpg" srcset="img/trainers/ketova-mobile@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Мария Кетова</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -390,7 +393,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/pavlova-mobile.jpg" srcset="img/trainers/pavlova-mobile@2x.jpg 2x" width="260" height="294" alt="Анна Павлова">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Анна Павлова</h3>
                   <p>Йога</p>
                   <ul>
@@ -415,7 +418,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/lavrov-mobile.jpg" srcset="img/trainers/lavrov-mobile@2x.jpg 2x" width="260" height="294" alt="Алексей Лавров">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Алексей Лавров</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -440,7 +443,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/pashkov-mobile.jpg" srcset="img/trainers/pashkov-mobile@2x.jpg 2x" width="260" height="294" alt="Александр Пашков">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Александр Пашков</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -465,7 +468,7 @@
                   <!-- 1х: 226px; 2x: 452px -->
                   <img class="trainers__img" src="img/trainers/ketova-mobile.jpg" srcset="img/trainers/ketova-mobile@2x.jpg 2x" width="260" height="294" alt="Мария Кетова">
                 </picture>
-                <article class="trainer">
+                <article class="trainer" tabindex="0">
                   <h3>Мария Кетова</h3>
                   <p>CrossFit</p>
                   <ul>
@@ -626,7 +629,7 @@
               </label>
               <label>
               <span class="visually-hidden">Телефон</span>
-              <input type="tel" name="phone" id="phone" pattern="[0-9]{11}" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
               </label>
               <input class="button" type="submit" value="Отправить">
             </form>
