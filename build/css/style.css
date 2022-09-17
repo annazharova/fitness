@@ -898,6 +898,7 @@ button,
 
 .gym .videoPoster {
   position: absolute;
+  cursor: pointer;
   top: 0px;
   left: 0px;
   width: 100%;
@@ -916,11 +917,10 @@ button,
   transition-delay: 0s, 0s;
 }
 
-.gym .videoPoster:hover {
+.gym .videoButton {
+  background-color: transparent;
+  border: none;
   cursor: pointer;
-}
-
-.gym .videoPoster:before {
   background-image: url("../img/video-button.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -936,9 +936,18 @@ button,
   transition: border-color 300ms;
 }
 
+.gym .videoButton:hover,
+.gym .videoButton:focus {
+  opacity: 50%;
+}
+
+.gym .videoButton:active {
+  opacity: 20%;
+}
+
 .gym .videoPoster:hover,
 .gym .videoPoster:focus {
-  background-blend-mode: multiply;
+  opacity: 90%;
 }
 
 .gym .videoWrapperActive .videoPoster {
@@ -2262,7 +2271,7 @@ button,
     background-image: url("../img/video-poster-tablet.webp");
   }
 
-  .gym .videoPoster:before {
+  .gym .videoButton {
     background-image: url("../img/video-button-tablet.png");
     width: 73px;
     height: 73px;
@@ -2684,7 +2693,7 @@ button,
     background-image: url("../img/video-poster-tablet@2x.webp");
   }
 
-  .gym .videoPoster:before {
+  .gym .videoButton {
     background-image: url("../img/video-button-tablet@2x.png");
   }
 }
@@ -3260,7 +3269,7 @@ button,
     background-image: url("../img/video-poster@2x.webp");
   }
 
-  .gym .videoPoster:before {
+  .gym .videoButton {
     background-image: url("../img/video-button@2x.png");
   }
 }
