@@ -86,7 +86,7 @@
 
 .trainers .swiper-wrapper {
   max-width: 1160px;
-  height: 294px;
+  min-height: 294px;
   width: fit-content;
 
   @media (max-width: $vp-tablet) {

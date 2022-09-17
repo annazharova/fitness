@@ -37,6 +37,11 @@
   align-items: center;
 }
 
+.header ul {
+  list-style: none;
+  margin: 0;
+}
+
 .header a {
   color: $color-white;
 }

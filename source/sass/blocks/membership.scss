@@ -63,6 +63,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
+  row-gap: 40px;
   padding-top: 40px;
 
   @media (max-width: $vp-tablet) {
@@ -127,7 +128,7 @@
 
 .membership__tile .button {
   width: 206px;
-  height: 66px;
+  min-height: 66px;
   display: flex;
   align-items: center;
   justify-content: center;

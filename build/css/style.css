@@ -636,6 +636,11 @@ button,
   align-items: center;
 }
 
+.header ul {
+  list-style: none;
+  margin: 0;
+}
+
 .header a {
   color: #ffffff;
 }
@@ -769,7 +774,7 @@ button,
 
 .intro .button {
   width: 232px;
-  height: 61px;
+  min-height: 61px;
   border: 4px solid #ffffff;
   letter-spacing: 0.05em;
   font-weight: 700;
@@ -863,7 +868,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-  align-self: flex-end;
+  margin-top: 287px;
   z-index: 1;
 }
 
@@ -990,6 +995,7 @@ button,
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+  row-gap: 40px;
   padding-top: 40px;
 }
 
@@ -1033,7 +1039,7 @@ button,
 
 .membership__tile .button {
   width: 206px;
-  height: 66px;
+  min-height: 66px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1159,7 +1165,7 @@ button,
 
 .supergames .button {
   width: 343px;
-  height: 70px;
+  min-height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,7 +1372,7 @@ button,
 
 .trainers .swiper-wrapper {
   max-width: 1160px;
-  height: 294px;
+  min-height: 294px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1439,11 +1445,7 @@ button,
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
-  margin-top: 0;
-  margin-bottom: 23px;
-  -ms-grid-row-align: flex-end;
-  -ms-grid-column-align: flex-end;
-  place-self: flex-end;
+  margin-top: 250px;
 }
 
 .trainer p {
@@ -1769,7 +1771,7 @@ button,
 
 .reviews article {
   width: 560px;
-  height: 242px;
+  min-height: 242px;
   background-color: #1c3374;
   -webkit-box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
   box-shadow: 0px 0px 40px rgba(28, 51, 116, 0.2);
@@ -1782,6 +1784,7 @@ button,
   -ms-grid-columns: 108px 1fr;
   grid-template-columns: 108px 1fr;
   padding: 62px;
+  padding-bottom: 42px;
   margin: 0 auto;
 }
 
@@ -1814,7 +1817,7 @@ button,
 
 .reviews .swiper {
   width: 700px;
-  height: 242px;
+  min-height: 242px;
 }
 
 .reviews .swiper-button-next {
@@ -1921,7 +1924,7 @@ button,
 .free-lesson .button {
   cursor: pointer;
   width: 410px;
-  height: 52px;
+  min-height: 52px;
   border: 3px solid #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -1957,6 +1960,7 @@ button,
   padding-left: 120px;
   border-top: 1px solid #74819c;
   padding-top: 70px;
+  margin-bottom: 60px;
 }
 
 .contacts__wrapper {
@@ -2048,6 +2052,8 @@ button,
   display: -ms-flexbox;
   display: flex;
   min-width: 770px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer-nav__item {
@@ -2600,6 +2606,7 @@ button,
     padding-right: 45px;
     padding-left: 133px;
     padding-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .contacts__wrapper {

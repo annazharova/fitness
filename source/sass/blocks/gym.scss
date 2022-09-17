@@ -70,7 +70,7 @@
 .gym__video {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
-  align-self: flex-end;
+  margin-top: 287px;
   z-index: 1;
 
   @media (max-width: $vp-tablet) {

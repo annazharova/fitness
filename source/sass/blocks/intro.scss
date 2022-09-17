@@ -131,7 +131,7 @@
 
 .intro .button {
   width: 232px;
-  height: 61px;
+  min-height: 61px;
   border: 4px solid $color-white;
   letter-spacing: 0.05em;
   font-weight: 700;
