@@ -1987,20 +1987,20 @@ button,
   -moz-column-gap: 120px;
   column-gap: 120px;
   margin-left: 2px;
+  position: relative;
+}
+
+.contacts__wrapper:after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  left: 232px;
+  height: 77%;
+  border-left: 1px solid #74819C;
 }
 
 .contacts h2 {
   margin-bottom: 22px;
-  position: relative;
-}
-
-.contacts h2::before {
-  content: '';
-  position: absolute;
-  top: 94px;
-  left: 233px;
-  height: 102px;
-  border-left: 1px solid #74819C;
 }
 
 .contacts__wrapper h3 {
@@ -2062,18 +2062,30 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   min-width: 770px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
+  -ms-grid-columns: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-columns: min-content min-content min-content min-content min-content min-content;
+  grid-template-columns: -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-columns: min-content min-content min-content min-content min-content min-content;
+  row-gap: 20px;
 }
 
 .footer-nav__item {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  margin-top: 9px;
+}
+
+.footer-nav__item-logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  margin-top: 9px;
 }
 
 .footer-nav__item a:hover,
@@ -2630,14 +2642,13 @@ button,
     column-gap: 40px;
   }
 
-  .contacts h2 {
-    margin-bottom: 12px;
+  .contacts__wrapper:after {
+    top: 25px;
+    left: 266px;
   }
 
-  .contacts h2::before {
-    top: 80px;
-    left: 265px;
-    height: 129px;
+  .contacts h2 {
+    margin-bottom: 12px;
   }
 
   .contacts__wrapper h3 {
@@ -3153,12 +3164,12 @@ button,
     width: 100%;
   }
 
-  .contacts h2 {
-    margin-bottom: 16px;
+  .contacts__wrapper:after {
+    content: none;
   }
 
-  .contacts h2::before {
-    content: none;
+  .contacts h2 {
+    margin-bottom: 16px;
   }
 
   .contacts__address {
@@ -3214,8 +3225,6 @@ button,
   }
 
   .footer-nav__list {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
@@ -3226,6 +3235,11 @@ button,
     -moz-column-gap: 45px;
     column-gap: 45px;
     grid-auto-flow: column;
+  }
+
+  .footer-nav__item-logo {
+    -ms-grid-row: 1;
+    grid-row: 1 / 1;
   }
 
   .footer-nav__img {

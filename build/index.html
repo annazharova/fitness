@@ -629,7 +629,7 @@
               </label>
               <label>
               <span class="visually-hidden">Телефон</span>
-              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="[0-9-\+\(\)\s]+" required>
               </label>
               <input class="button" type="submit" value="Отправить">
             </form>
@@ -662,7 +662,7 @@
       <div class="container">
         <nav class="footer-nav">
           <ul class="footer-nav__list">
-            <li>
+            <li class="footer-nav__item-logo">
               <a class="logo">
                 <span class="visually-hidden">Главная страница</span>
                 <svg class="footer-nav__img" width="89" height="20">
