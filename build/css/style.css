@@ -631,9 +631,6 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .header ul {
@@ -698,6 +695,7 @@ button,
   -moz-column-gap: 63px;
   column-gap: 63px;
   margin-top: -5px;
+  margin-bottom: 50px;
 }
 
 .intro__text {
@@ -1390,7 +1388,7 @@ button,
 
 .trainers .swiper-wrapper {
   max-width: 1160px;
-  min-height: 294px;
+  height: 294px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1425,6 +1423,7 @@ button,
   justify-content: center;
   height: 100%;
   width: 260px;
+  overflow: auto;
 }
 
 .trainer:hover,
@@ -1597,7 +1596,8 @@ button,
   background-color: #1c3374;
   color: #ffffff;
   text-align: center;
-  height: 307px;
+  min-height: 307px;
+  margin-bottom: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
@@ -2480,6 +2480,7 @@ button,
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     width: 442px;
+    min-height: 239px;
     height: auto;
     margin: 0 auto;
     margin-top: -10px;
