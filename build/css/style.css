@@ -1175,7 +1175,7 @@ button,
 
 .supergames .button {
   width: 343px;
-  min-height: 70px;
+  min-height: 39px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2306,7 +2306,7 @@ button,
   }
 
   .membership__img {
-    bottom: -53px;
+    bottom: -55px;
     width: 308px;
   }
 
