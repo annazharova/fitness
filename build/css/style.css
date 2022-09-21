@@ -3220,8 +3220,8 @@ button,
   .footer-nav {
     min-width: 100%;
     width: 100%;
-    margin-top: 27px;
-    margin-left: -4px;
+    margin-top: 18px;
+    margin-left: -3px;
   }
 
   .footer-nav__list {
@@ -3230,11 +3230,10 @@ button,
     -ms-grid-rows: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     min-width: 100%;
-    row-gap: 16px;
+    row-gap: 7px;
     -webkit-column-gap: 45px;
     -moz-column-gap: 45px;
     column-gap: 45px;
-    grid-auto-flow: column;
   }
 
   .footer-nav__item-logo {
